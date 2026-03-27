@@ -248,6 +248,81 @@ body {
     background: linear-gradient(to right, var(--accent-dark), #00ffcc);
 }
 
+/* Training Materials Section */
+.bg-accent {
+    background: linear-gradient(135deg, var(--light-navy) 0%, var(--navy) 100%);
+    padding: 80px 0;
+}
+
+.text-white {
+    color: var(--white);
+}
+
+.training-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 600px;
+    margin: 0 auto;
+    color: var(--white);
+    transition: 0.3s;
+}
+
+.training-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+    border-color: var(--accent-dark);
+}
+
+.pdf-icon {
+    font-size: 4rem;
+    color: var(--accent-dark);
+    margin-bottom: 20px;
+}
+
+.training-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.training-card p {
+    color: var(--slate);
+    margin-bottom: 30px;
+}
+
+.card-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn-card {
+    padding: 12px 25px;
+    background: var(--accent-dark);
+    color: var(--navy);
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-card.outline {
+    background: transparent;
+    border: 2px solid var(--accent-dark);
+    color: var(--accent-dark);
+}
+
+.btn-card:hover {
+    background: var(--white);
+    color: var(--navy);
+}
+
+.btn-card.outline:hover {
+    background: var(--accent-dark);
+    color: var(--navy);
+}
+
 /* Portfolio Grid */
 .project-block {
     margin-bottom: 80px;
