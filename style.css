@@ -479,6 +479,47 @@ body {
     border-top: 1px solid rgba(255,255,255,0.05);
 }
 
+/* Admin Visual Editor Tool */
+.admin-tool {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-admin {
+    padding: 12px 20px;
+    background: var(--navy);
+    color: var(--white);
+    border: 1px solid var(--accent-dark);
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: var(--font-main);
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.btn-admin.active {
+    background: var(--accent-dark);
+    color: var(--navy);
+}
+
+.btn-admin.save-btn {
+    background: #28a745;
+    border-color: #28a745;
+}
+
+.editing-active {
+    outline: 2px dashed var(--accent-dark) !important;
+    background: rgba(0, 212, 255, 0.1) !important;
+    padding: 5px !important;
+    border-radius: 5px !important;
+}
+
 /* Responsive */
 @media (max-width: 992px) {
     .infographic-summary {

@@ -202,7 +202,14 @@
         </div>
     </footer>
 
+    <!-- Admin Visual Editor Tool -->
+    <div id="adminTool" class="admin-tool">
+        <button id="editToggle" class="btn-admin"><i class="fas fa-edit"></i> เปิดโหมดแก้ไข</button>
+        <button id="saveChanges" class="btn-admin save-btn" style="display:none;"><i class="fas fa-save"></i> บันทึก & Export</button>
+    </div>
+
     <script>
+        // Copy Prompt Function
         document.getElementById('copyBtn').addEventListener('click', function() {
             const text = document.getElementById('promptText').innerText;
             navigator.clipboard.writeText(text).then(() => {
@@ -212,6 +219,52 @@
                     this.innerHTML = originalText;
                 }, 2000);
             });
+        });
+
+        // Visual Editor Logic
+        const editToggle = document.getElementById('editToggle');
+        const saveChanges = document.getElementById('saveChanges');
+        let isEditing = false;
+
+        editToggle.addEventListener('click', () => {
+            isEditing = !isEditing;
+            const editableElements = document.querySelectorAll('h1, h2, h3, h4, p, span, .btn-hero, .btn-card');
+            
+            if (isEditing) {
+                editToggle.innerHTML = '<i class="fas fa-eye"></i> ปิดโหมดแก้ไข';
+                editToggle.classList.add('active');
+                saveChanges.style.display = 'block';
+                editableElements.forEach(el => {
+                    el.setAttribute('contenteditable', 'true');
+                    el.classList.add('editing-active');
+                });
+                alert('เปิดโหมดแก้ไขแล้ว: คุณสามารถคลิกที่ข้อความใดก็ได้เพื่อพิมพ์แก้ไข');
+            } else {
+                editToggle.innerHTML = '<i class="fas fa-edit"></i> เปิดโหมดแก้ไข';
+                editToggle.classList.remove('active');
+                saveChanges.style.display = 'none';
+                editableElements.forEach(el => {
+                    el.setAttribute('contenteditable', 'false');
+                    el.classList.remove('editing-active');
+                });
+            }
+        });
+
+        saveChanges.addEventListener('click', () => {
+            // Remove editing indicators before saving
+            const elements = document.querySelectorAll('.editing-active');
+            elements.forEach(el => el.classList.remove('editing-active'));
+            
+            // Get the current HTML
+            const htmlContent = document.documentElement.outerHTML;
+            const blob = new Blob([htmlContent], { type: 'text/html' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'index.html';
+            a.click();
+            
+            alert('บันทึกสำเร็จ! ระบบจะดาวน์โหลดไฟล์ index.html ตัวใหม่ให้คุณนำไปอัปเดตใน GitHub ครับ');
         });
     </script>
 </body>
