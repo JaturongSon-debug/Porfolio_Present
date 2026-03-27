@@ -136,6 +136,44 @@ body {
     border-radius: 50px;
     font-size: 1.1rem;
     color: var(--accent-dark);
+    margin-bottom: 25px;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-hero {
+    padding: 12px 25px;
+    background: var(--accent-dark);
+    color: var(--navy);
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
+}
+
+.btn-hero.secondary {
+    background: transparent;
+    border: 2px solid var(--accent-dark);
+    color: var(--accent-dark);
+}
+
+.btn-hero:hover {
+    background: var(--white);
+    color: var(--navy);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 212, 255, 0.3);
+}
+
+.btn-hero.secondary:hover {
+    background: var(--accent-dark);
+    color: var(--navy);
 }
 
 /* Sections */
