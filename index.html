@@ -1,270 +1,353 @@
 <!DOCTYPE html>
-<html lang="th">
+<html class="light" lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Executive Portfolio | Jaturong Songpakde</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&family=Sarabun:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Executive Portfolio | จาตุรงค์ ทรงภักดี</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Inter:wght@400;500;600;700&amp;family=Prompt:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-bright": "#fff7fc",
+                        "surface-container-high": "#f0e5ee",
+                        "surface-dim": "#e1d7e0",
+                        "on-secondary-container": "#70557d",
+                        "tertiary-container": "#823400",
+                        "surface-container-low": "#fbf0fa",
+                        "outline-variant": "#d0c2d2",
+                        "secondary-container": "#f0cefe",
+                        "surface-container": "#f5ebf4",
+                        "on-surface-variant": "#4d4450",
+                        "primary": "#540f78",
+                        "secondary": "#6f547d",
+                        "surface-variant": "#eadfe9",
+                        "primary-container": "#6d2d91",
+                        "surface": "#fff7fc",
+                        "on-surface": "#1f1a20",
+                        "on-primary": "#ffffff",
+                        "tertiary": "#5e2300",
+                        "background": "#fff7fc",
+                        "on-background": "#1f1a20",
+                        "surface-container-lowest": "#ffffff",
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope", "Prompt"],
+                        "body": ["Inter", "Prompt"],
+                        "label": ["Inter", "Prompt"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Prompt', 'Inter', sans-serif; }
+        h1, h2, h3, .font-headline { font-family: 'Manrope', 'Prompt', sans-serif; }
+        .glass-header {
+            background: rgba(255, 247, 252, 0.7);
+            backdrop-filter: blur(20px);
+        }
+    </style>
 </head>
-<body>
-
-    <!-- Header Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">PORTFOLIO <span class="accent">2026</span></div>
-            <ul class="nav-links">
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#summary">SUMMARY</a></li>
-                <li><a href="#projects">PORTFOLIO</a></li>
-                <li><a href="#education">EDUCATION</a></li>
-                <li><a href="#prompt">COPY PROMPT</a></li>
-            </ul>
+<body class="bg-surface text-on-surface">
+    <!-- Top Navigation -->
+    <header class="flex justify-between items-center px-8 py-4 w-full sticky top-0 z-50 glass-header shadow-sm">
+        <div class="flex items-center gap-6">
+            <span class="text-lg font-bold text-primary">PEA Digital Curator</span>
+            <nav class="hidden md:flex gap-6 items-center">
+                <a class="text-primary font-bold transition-all font-body text-base" href="#home">Home</a>
+                <a class="text-on-surface opacity-60 hover:text-primary transition-all font-body text-base" href="#achievements">Achievements</a>
+                <a class="text-on-surface opacity-60 hover:text-primary transition-all font-body text-base" href="#education">Education</a>
+                <a class="text-on-surface opacity-60 hover:text-primary transition-all font-body text-base" href="#prompt">Prompt</a>
+            </nav>
         </div>
-    </nav>
+        <div class="flex items-center gap-4">
+            <div class="hidden md:block text-right mr-2">
+                <span class="block text-[10px] uppercase tracking-widest opacity-60">Executive Profile</span>
+                <span class="block text-sm font-bold text-primary">Jaturong Songpakde</span>
+            </div>
+            <img alt="User Profile" class="w-10 h-10 rounded-full object-cover border-2 border-primary-container shadow-md" src="Profile .jpg"/>
+        </div>
+    </header>
 
-    <!-- Hero Infographic -->
-    <section id="home" class="hero" style="background-image: linear-gradient(to right, rgba(10, 25, 47, 0.85), rgba(10, 25, 47, 0.4)), url('หน้าปก สำหรับ website.jpg');">
-        <div class="container hero-wrapper">
-            <div class="hero-main">
-                <div class="profile-container">
-                    <img src="Profile .jpg" alt="Jaturong Songpakde" class="profile-circle">
+    <main class="max-w-7xl mx-auto px-8 py-12">
+        <!-- Hero Section -->
+        <section id="home" class="mb-24 relative">
+            <div class="flex flex-col md:flex-row gap-12 items-center md:items-end">
+                <div class="flex-1">
+                    <span class="inline-block px-3 py-1 bg-tertiary-container text-on-tertiary text-[0.65rem] font-bold tracking-widest uppercase rounded-full mb-6">Executive Portfolio 2026</span>
+                    <h1 class="text-[3.5rem] font-extrabold leading-tight text-primary mb-6 tracking-tight">จาตุรงค์ ทรงภักดี</h1>
+                    <p class="text-xl text-on-surface-variant max-w-2xl leading-relaxed font-body">
+                        พชง. 6 ผรผ.กสฟ.น2 | ผู้เชี่ยวชาญด้านสายสื่อสาร และเทคโนโลยีพลังงานสะอาด (EV & Solar) 
+                        มุ่งเน้นการพัฒนานวัตกรรมเพื่อขับเคลื่อนองค์กรสู่ยุคดิจิทัล
+                    </p>
+                    <div class="mt-8 flex gap-4">
+                        <a href="GithubXGeminiCLI.pdf" target="_blank" class="bg-primary text-white px-8 py-3 rounded-md font-bold hover:opacity-90 transition-all flex items-center gap-2 shadow-lg">
+                            <span class="material-symbols-outlined">description</span> ดูสไลด์ประกอบการสอน
+                        </a>
+                        <a href="GithubXGeminiCLI.pdf" download class="border border-primary text-primary px-8 py-3 rounded-md font-bold hover:bg-primary hover:text-white transition-all flex items-center gap-2">
+                            <span class="material-symbols-outlined">download</span> Download PDF
+                        </a>
+                    </div>
                 </div>
-                <div class="hero-info">
-                    <h1 class="main-name">จาตุรงค์ ทรงภักดี</h1>
-                    <h2 class="english-name">Jaturong Songpakde</h2>
-                    <div class="role-badge">พชง. 6 ผรผ.กสฟ.น2</div>
-                    <div class="hero-actions">
-                        <a href="GithubXGeminiCLI.pdf" target="_blank" class="btn-hero"><i class="fas fa-file-pdf"></i> ดูสไลด์ประกอบการสอน</a>
-                        <a href="GithubXGeminiCLI.pdf" download class="btn-hero secondary"><i class="fas fa-download"></i> Download PDF</a>
+                <div class="flex-shrink-0">
+                    <div class="relative">
+                        <img src="Profile .jpg" alt="Jaturong" class="w-64 h-64 rounded-2xl object-cover shadow-2xl border-4 border-white">
+                        <div class="absolute -bottom-6 -right-6 bg-tertiary-container text-white p-6 rounded-xl shadow-xl">
+                            <span class="block text-3xl font-black">Level 6</span>
+                            <span class="text-xs uppercase tracking-tighter opacity-80">Promotion Candidate</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Training Materials (New Prominent Section) -->
-    <section class="section bg-accent">
-        <div class="container text-center">
-            <h2 class="section-heading text-white">เอกสารประกอบการอบรม</h2>
-            <div class="training-card">
-                <i class="fas fa-file-pdf pdf-icon"></i>
-                <h3>Github X Gemini CLI Slides</h3>
-                <p>ไฟล์ประกอบการบรรยายสำหรับผู้เข้าร่วมอบรม (PDF)</p>
-                <div class="card-actions">
-                    <a href="GithubXGeminiCLI.pdf" target="_blank" class="btn-card">เปิดดูสไลด์</a>
-                    <a href="GithubXGeminiCLI.pdf" download class="btn-card outline">ดาวน์โหลดไฟล์</a>
+            <div class="mt-16 h-[400px] w-full relative overflow-hidden rounded-2xl shadow-2xl">
+                <img alt="Hero Background" class="w-full h-full object-cover" src="หน้าปก สำหรับ website.jpg"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent"></div>
+                <div class="absolute bottom-12 left-12">
+                    <h2 class="text-white text-4xl font-black mb-2">Digital Transformation & Energy</h2>
+                    <p class="text-white/80 max-w-xl">บูรณาการเทคโนโลยี AI และการจัดการพลังงานสมัยใหม่ เพื่อประสิทธิภาพสูงสุดของ กฟภ.</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Professional Summary (Infographic Style) -->
-    <section id="summary" class="section bg-dark">
-        <div class="container">
-            <div class="infographic-summary">
-                <div class="summary-item">
-                    <div class="icon-box"><i class="fas fa-chalkboard-teacher"></i></div>
-                    <h3>ผู้เชี่ยวชาญ/วิทยากร</h3>
-                    <p>ด้านสายสื่อสารและเทคโนโลยี</p>
-                    <div class="stat-bar"><div class="stat-fill" style="width: 95%;"></div></div>
+        <!-- Executive Summary Stats -->
+        <section class="mb-24">
+            <h2 class="text-[2rem] font-bold text-primary mb-12 flex items-center gap-4">
+                <span class="w-12 h-1 bg-primary inline-block"></span> Professional Expertise
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-surface-container-lowest p-8 rounded-2xl border-b-4 border-primary shadow-sm hover:shadow-xl transition-all duration-300">
+                    <span class="material-symbols-outlined text-primary text-5xl mb-6">broadcast_tower</span>
+                    <h3 class="text-xl font-bold mb-4">สายสื่อสาร & วิทยากร</h3>
+                    <p class="text-on-surface-variant leading-relaxed mb-6">ผู้เชี่ยวชาญและวิทยากรด้านระบบสายสื่อสาร ให้ความรู้แก่บุคลากรและหน่วยงานภายนอก</p>
+                    <div class="w-full bg-surface-container rounded-full h-2">
+                        <div class="bg-primary h-2 rounded-full" style="width: 95%"></div>
+                    </div>
+                    <span class="text-xs font-bold text-primary mt-2 block">95% Mastery</span>
                 </div>
-                <div class="summary-item">
-                    <div class="icon-box"><i class="fas fa-charging-station"></i></div>
-                    <h3>EV Specialist</h3>
-                    <p>HomeCharging & EV Station (PEA)</p>
-                    <div class="stat-bar"><div class="stat-fill" style="width: 90%;"></div></div>
+                <!-- Card 2 -->
+                <div class="bg-surface-container-lowest p-8 rounded-2xl border-b-4 border-tertiary-container shadow-sm hover:shadow-xl transition-all duration-300">
+                    <span class="material-symbols-outlined text-tertiary-container text-5xl mb-6">ev_station</span>
+                    <h3 class="text-xl font-bold mb-4">EV Specialist</h3>
+                    <p class="text-on-surface-variant leading-relaxed mb-6">เชี่ยวชาญด้าน EV HomeCharging และ EV Station สำหรับผู้ประกอบการและการติดตั้งของ กฟภ.</p>
+                    <div class="w-full bg-surface-container rounded-full h-2">
+                        <div class="bg-tertiary-container h-2 rounded-full" style="width: 90%"></div>
+                    </div>
+                    <span class="text-xs font-bold text-tertiary-container mt-2 block">90% Specialist</span>
                 </div>
-                <div class="summary-item">
-                    <div class="icon-box"><i class="fas fa-microchip"></i></div>
-                    <h3>AI & Tech Pursuer</h3>
-                    <p>ปริญญาโท วิศวกรรมคอมพิวเตอร์ และ AI</p>
-                    <div class="stat-bar"><div class="stat-fill" style="width: 85%;"></div></div>
+                <!-- Card 3 -->
+                <div class="bg-surface-container-lowest p-8 rounded-2xl border-b-4 border-secondary text-on-surface shadow-sm hover:shadow-xl transition-all duration-300">
+                    <span class="material-symbols-outlined text-secondary text-5xl mb-6">psychology</span>
+                    <h3 class="text-xl font-bold mb-4">AI & Computer Engineering</h3>
+                    <p class="text-on-surface-variant leading-relaxed mb-6">กำลังศึกษาระดับปริญญาโทด้านวิศวกรรมคอมพิวเตอร์และ AI เพื่อประยุกต์ใช้ในงานวิศวกรรม</p>
+                    <div class="w-full bg-surface-container rounded-full h-2">
+                        <div class="bg-secondary h-2 rounded-full" style="width: 85%"></div>
+                    </div>
+                    <span class="text-xs font-bold text-secondary mt-2 block">85% Researcher</span>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Portfolio Sections -->
-    <section id="projects" class="section">
-        <div class="container">
-            <h2 class="section-heading text-center">Executive Project Highlights</h2>
+        <!-- Achievements Portfolio -->
+        <section id="achievements" class="mb-24">
+            <h2 class="text-[2rem] font-bold text-primary mb-12 flex items-center gap-4">
+                <span class="w-12 h-1 bg-primary inline-block"></span> Strategic Projects & Achievements
+            </h2>
             
-            <!-- Communication Section -->
-            <div class="project-block">
-                <div class="block-header">
-                    <div class="block-title">
-                        <i class="fas fa-broadcast-tower"></i>
-                        <span>โครงการด้านสายสื่อสาร (วิทยากร)</span>
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+                <!-- Communication Large Card -->
+                <div class="md:col-span-8 group relative overflow-hidden rounded-2xl bg-surface-container-highest flex flex-col md:flex-row shadow-sm hover:shadow-lg transition-all">
+                    <div class="p-8 md:w-1/2 flex flex-col justify-between z-10">
+                        <div>
+                            <span class="px-3 py-1 bg-primary text-white text-[10px] font-bold uppercase tracking-wider rounded mb-4 inline-block">Communication Specialist</span>
+                            <h3 class="text-2xl font-bold text-on-surface mb-4">โครงการวิทยากรด้านสายสื่อสาร</h3>
+                            <p class="text-body-md text-on-surface-variant mb-6 leading-relaxed">
+                                การถ่ายทอดองค์ความรู้ด้านเทคโนโลยีสายสื่อสารสำหรับโครงสร้างพื้นฐานยุคใหม่ และการบริหารจัดการเครือข่ายที่มีประสิทธิภาพ
+                            </p>
+                        </div>
+                        <div class="flex gap-2">
+                            <img src="รูปภาพผลงาน/comm-1.jpg" class="w-12 h-12 rounded object-cover border border-white">
+                            <img src="รูปภาพผลงาน/comm-2.jpg" class="w-12 h-12 rounded object-cover border border-white">
+                            <img src="รูปภาพผลงาน/comm-3.jpg" class="w-12 h-12 rounded object-cover border border-white">
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 h-64 md:h-full relative overflow-hidden">
+                        <img class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" src="รูปภาพผลงาน/comm-4.jpg"/>
                     </div>
                 </div>
-                <div class="gallery-grid">
-                    <div class="gallery-item"><img src="รูปภาพผลงาน/comm-1.jpg" alt="Comm 1"></div>
-                    <div class="gallery-item"><img src="รูปภาพผลงาน/comm-2.jpg" alt="Comm 2"></div>
-                    <div class="gallery-item"><img src="รูปภาพผลงาน/comm-3.jpg" alt="Comm 3"></div>
-                    <div class="gallery-item"><img src="รูปภาพผลงาน/comm-4.jpg" alt="Comm 4"></div>
-                    <div class="gallery-item"><img src="รูปภาพผลงาน/comm-5.jpg" alt="Comm 5"></div>
-                    <div class="gallery-item"><img src="รูปภาพผลงาน/comm-6.jpg" alt="Comm 6"></div>
-                </div>
-            </div>
 
-            <!-- EV Section -->
-            <div class="project-block">
-                <div class="block-header">
-                    <div class="block-title">
-                        <i class="fas fa-car-battery"></i>
-                        <span>EV HomeCharging & EV Station (กฟภ.)</span>
+                <!-- EV Small Card -->
+                <div class="md:col-span-4 group bg-surface-container-highest rounded-2xl overflow-hidden flex flex-col shadow-sm hover:shadow-lg transition-all">
+                    <div class="h-48 relative overflow-hidden">
+                        <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" src="รูปภาพผลงาน/ev-1.jpg"/>
+                        <div class="absolute top-4 left-4">
+                            <span class="px-3 py-1 bg-tertiary-container text-white text-[10px] font-bold uppercase tracking-wider rounded">EV Innovation</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-on-surface mb-2">EV HomeCharging Solutions</h3>
+                        <p class="text-sm text-on-surface-variant mb-4">การติดตั้งและทดสอบระบบชาร์จรถยนต์ไฟฟ้าสำหรับบ้านพักอาศัยและสถานีบริการ</p>
+                        <div class="bg-tertiary-container/10 p-3 rounded-lg border-l-4 border-tertiary-container">
+                            <p class="text-xs font-bold text-tertiary-container">กฟภ. มาตรฐานความปลอดภัย</p>
+                        </div>
                     </div>
                 </div>
-                <div class="gallery-grid">
-                    <div class="gallery-item"><img src="รูปภาพผลงาน/ev-1.jpg" alt="EV 1"></div>
-                    <div class="gallery-item"><img src="รูปภาพผลงาน/ev-2.jpg" alt="EV 2"></div>
-                    <div class="gallery-item"><img src="รูปภาพผลงาน/ev-3.jpg" alt="EV 3"></div>
-                    <div class="gallery-item"><img src="รูปภาพผลงาน/ev-4.jpg" alt="EV 4"></div>
-                    <div class="gallery-item"><img src="รูปภาพผลงาน/ev-5.jpg" alt="EV 5"></div>
-                    <div class="gallery-item"><img src="รูปภาพผลงาน/ev-6.jpg" alt="EV 6"></div>
-                </div>
-            </div>
 
-            <!-- Solar & Other -->
-            <div class="project-block">
-                <div class="block-header">
-                    <div class="block-title">
-                        <i class="fas fa-solar-panel"></i>
-                        <span>งานนำเสนอ และโครงการ Solar Energy</span>
+                <!-- Solar Small Card -->
+                <div class="md:col-span-4 group bg-surface-container-highest rounded-2xl overflow-hidden flex flex-col shadow-sm hover:shadow-lg transition-all">
+                    <div class="h-48 relative overflow-hidden">
+                        <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" src="รูปภาพผลงาน/solar-1.jpg"/>
+                        <div class="absolute top-4 left-4">
+                            <span class="px-3 py-1 bg-secondary text-white text-[10px] font-bold uppercase tracking-wider rounded">Solar Energy</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-on-surface mb-2">Solar Energy Projects</h3>
+                        <p class="text-sm text-on-surface-variant mb-4">งานนำเสนอและการออกแบบระบบพลังงานแสงอาทิตย์เพื่อความยั่งยืน</p>
                     </div>
                 </div>
-                <div class="gallery-grid">
-                    <div class="gallery-item"><img src="รูปภาพผลงาน/Present.jpg" alt="Present"></div>
-                    <div class="gallery-item"><img src="รูปภาพผลงาน/Present1.jpg" alt="Present 1"></div>
-                    <div class="gallery-item"><img src="รูปภาพผลงาน/Present2.jpg" alt="Present 2"></div>
-                    <div class="gallery-item"><img src="รูปภาพผลงาน/solar-1.jpg" alt="Solar 1"></div>
-                    <div class="gallery-item"><img src="รูปภาพผลงาน/solar-2.jpg" alt="Solar 2"></div>
-                    <div class="gallery-item"><img src="รูปภาพผลงาน/solar-3.jpg" alt="Solar 3"></div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Education Roadmap -->
-    <section id="education" class="section bg-light">
-        <div class="container">
-            <h2 class="section-heading text-center">Educational Roadmap</h2>
-            <div class="roadmap">
-                <div class="roadmap-item">
-                    <div class="roadmap-icon"><i class="fas fa-graduation-cap"></i></div>
-                    <div class="roadmap-content">
-                        <h4>ปริญญาตรี เทคโนโลยีไฟฟ้า</h4>
-                        <p>Electrical Technology Specialist</p>
+                <!-- Presentation Large Card -->
+                <div class="md:col-span-8 group relative overflow-hidden rounded-2xl bg-surface-container-highest flex flex-col md:flex-row-reverse shadow-sm hover:shadow-lg transition-all">
+                    <div class="p-8 md:w-1/2 flex flex-col justify-between z-10">
+                        <div>
+                            <span class="px-3 py-1 bg-secondary-container text-on-secondary-container text-[10px] font-bold uppercase tracking-wider rounded mb-4 inline-block">Academic & Professional Present</span>
+                            <h3 class="text-2xl font-bold text-on-surface mb-4">การนำเสนอผลงานระดับบริหาร</h3>
+                            <p class="text-body-md text-on-surface-variant mb-6 leading-relaxed">
+                                ประสบการณ์การนำเสนอนวัตกรรมและแผนงานต่อผู้บริหารระดับสูง เพื่อการตัดสินใจเชิงกลยุทธ์
+                            </p>
+                        </div>
+                        <div class="bg-primary/5 p-4 rounded-xl">
+                            <p class="text-xs italic font-medium text-primary">"นำเสนอวิสัยทัศน์และการประยุกต์ใช้ AI ในองค์กร"</p>
+                        </div>
                     </div>
-                </div>
-                <div class="roadmap-item active">
-                    <div class="roadmap-icon"><i class="fas fa-brain"></i></div>
-                    <div class="roadmap-content">
-                        <h4>ปริญญาโท วิศวกรรมคอมพิวเตอร์ และปัญญาประดิษฐ์</h4>
-                        <p>กำลังศึกษา (Computer Engineering & AI)</p>
+                    <div class="md:w-1/2 h-64 md:h-full relative overflow-hidden">
+                        <img class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" src="รูปภาพผลงาน/Present.jpg"/>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Prompt Copy Section -->
-    <section id="prompt" class="section">
-        <div class="container">
-            <div class="prompt-box">
-                <div class="prompt-header">
-                    <h3><i class="fas fa-code"></i> Copy Prompt</h3>
-                    <button id="copyBtn" class="btn-copy"><i class="far fa-copy"></i> Copy Content</button>
+        <!-- Education Roadmap -->
+        <section id="education" class="mb-24 bg-surface-container-low -mx-8 px-8 py-20 rounded-[3rem]">
+            <h2 class="text-[2rem] font-bold text-primary mb-12 text-center">Educational Roadmap</h2>
+            <div class="max-w-4xl mx-auto relative">
+                <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-primary/10"></div>
+                
+                <div class="space-y-16">
+                    <!-- Step 1 -->
+                    <div class="relative flex items-center justify-between">
+                        <div class="w-5/12 text-right pr-12">
+                            <h4 class="text-xl font-bold text-primary">ปริญญาตรี เทคโนโลยีไฟฟ้า</h4>
+                            <p class="text-on-surface-variant">Electrical Technology Specialist</p>
+                        </div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold z-10">01</div>
+                        <div class="w-5/12 pl-12"></div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="relative flex items-center justify-between">
+                        <div class="w-5/12 pr-12"></div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-tertiary-container text-white flex items-center justify-center font-bold z-10 animate-pulse">02</div>
+                        <div class="w-5/12 text-left pl-12">
+                            <h4 class="text-xl font-bold text-tertiary-container">ปริญญาโท วิศวกรรมคอมพิวเตอร์ และปัญญาประดิษฐ์</h4>
+                            <p class="text-on-surface-variant">กำลังศึกษา (M.Eng Computer Engineering & AI)</p>
+                            <span class="mt-2 inline-block px-3 py-1 bg-tertiary-container/10 text-tertiary-container text-[10px] font-bold rounded">In Progress</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="prompt-content">
-                    <pre id="promptText">จงสร้าง website  แบบ onesingle page แบบ modern สร้างโดยใช้ HTML 5 และ CSS 
+            </div>
+        </section>
+
+        <!-- Prompt Section -->
+        <section id="prompt" class="mb-24">
+            <div class="bg-primary text-white p-12 rounded-3xl relative overflow-hidden shadow-2xl">
+                <div class="absolute top-0 right-0 p-12 opacity-10">
+                    <span class="material-symbols-outlined text-[15rem]">code</span>
+                </div>
+                <div class="relative z-10">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
+                        <h2 class="text-3xl font-bold">Copy Prompt for Gemini CLI</h2>
+                        <button id="copyBtn" class="bg-white text-primary px-8 py-3 rounded-full font-bold hover:bg-secondary-container transition-all flex items-center gap-2">
+                            <span class="material-symbols-outlined">content_copy</span> Copy Content
+                        </button>
+                    </div>
+                    <div class="bg-black/20 p-8 rounded-2xl backdrop-blur-md border border-white/10 font-mono text-sm leading-relaxed overflow-x-auto">
+                        <pre id="promptText" class="whitespace-pre-wrap">จงสร้าง website แบบ onesingle page แบบ modern สร้างโดยใช้ HTML 5 และ CSS 
 โดยมีข้อมูลดังนี้ 
-1. ชื่อ  จาตุรงค์  ทรงภักดี Jaturong Songpakde
+1. ชื่อ จาตุรงค์ ทรงภักดี Jaturong Songpakde
 2. ตำแหน่ง พชง. 6 ผรผ.กสฟ.น2 
-3. ผลงาน วิทยากร ด้าน สายสื่อสาร ของบริษัทสายสื่อสาร  , EV HomeCharging  EV Station ของ ผู้ประกอบการ ในการติดตั้งของ กฟภ.
-4. ประวัติการศึกษา ปริญญาตรี เทคโนโลยีไฟฟ้า  และกำลังศึกษา ปริญญาโท วิศวกรรมคอมพิวเตอร์ และปัญญาประดิษฐ์
+3. ผลงาน วิทยากร ด้าน สายสื่อสาร ของบริษัทสายสื่อสาร , EV HomeCharging EV Station ของ ผู้ประกอบการ ในการติดตั้งของ กฟภ.
+4. ประวัติการศึกษา ปริญญาตรี เทคโนโลยีไฟฟ้า และกำลังศึกษา ปริญญาโท วิศวกรรมคอมพิวเตอร์ และปัญญาประดิษฐ์
 5. โดยใช้รูปชื่อ "Profile.jpg" เป็นรูปโปรโฟล์ และ รูปชื่อ "หน้าปก สำหรับ website.jpg" เป็นภาพพื้นหลังหน้าปก 
-6. ให้ใช้ ไฟล์ Text ชื่อ "Prompt.text" สำหรับ คัดลอก  โดยมีปุ่มสำหรับ Copy 
+6. ให้ใช้ ไฟล์ Text ชื่อ "Prompt.text" สำหรับ คัดลอก โดยมีปุ่มสำหรับ Copy 
 7. โดยให้ใช้ ธีม ของ website เป็น แนว Infographic นำเสนอผลงานให้ ผู้บริหาร 
 8. โดยใช้ website ของ https://github.com/JaturongSon-debug/Porfolio_Present.git พร้อมทำดำเนินการ ทั้งหมดให้ได้ website ออกมา</pre>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Executive Portfolio - Jaturong Songpakde</p>
+        <!-- Signature Section -->
+        <section class="flex flex-col md:flex-row justify-between items-center py-12 border-t border-outline-variant/30">
+            <div class="flex items-center gap-6 mb-8 md:mb-0">
+                <img alt="Signature Profile" class="w-20 h-20 rounded-full border-4 border-primary-container shadow-md" src="Profile .jpg"/>
+                <div>
+                    <span class="block text-primary text-xl font-bold">จาตุรงค์ ทรงภักดี</span>
+                    <span class="block text-sm uppercase tracking-widest text-on-surface-variant">พชง. 6 ผรผ.กสฟ.น2 | Provincial Electricity Authority</span>
+                </div>
+            </div>
+            <div class="flex gap-4">
+                <img src="QR สำหรับ เปิดลิงค์ .png" alt="QR Link" class="w-24 h-24 rounded-lg shadow-md border border-outline-variant/20">
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-surface-container-low py-12 mt-12">
+        <div class="max-w-7xl mx-auto px-8 flex flex-col items-center gap-6">
+            <div class="flex gap-8">
+                <a class="text-on-surface-variant hover:text-primary text-xs font-inter transition-colors" href="#">Privacy Policy</a>
+                <a class="text-on-surface-variant hover:text-primary text-xs font-inter transition-colors" href="#">Contact Support</a>
+                <a class="text-on-surface-variant hover:text-primary text-xs font-inter transition-colors" href="#">Internal Portal</a>
+            </div>
+            <p class="text-xs text-on-surface-variant opacity-60 font-inter text-center">
+                © 2026 Provincial Electricity Authority. All Rights Reserved.<br>
+                Designed with PEA Digital Curator System
+            </p>
         </div>
     </footer>
-
-    <!-- Admin Visual Editor Tool -->
-    <div id="adminTool" class="admin-tool">
-        <button id="editToggle" class="btn-admin"><i class="fas fa-edit"></i> เปิดโหมดแก้ไข</button>
-        <button id="saveChanges" class="btn-admin save-btn" style="display:none;"><i class="fas fa-save"></i> บันทึก & Export</button>
-    </div>
 
     <script>
         // Copy Prompt Function
         document.getElementById('copyBtn').addEventListener('click', function() {
             const text = document.getElementById('promptText').innerText;
             navigator.clipboard.writeText(text).then(() => {
-                const originalText = this.innerHTML;
-                this.innerHTML = '<i class="fas fa-check"></i> Copied!';
+                const originalContent = this.innerHTML;
+                this.innerHTML = '<span class="material-symbols-outlined">check</span> Copied!';
                 setTimeout(() => {
-                    this.innerHTML = originalText;
+                    this.innerHTML = originalContent;
                 }, 2000);
             });
         });
 
-        // Visual Editor Logic
-        const editToggle = document.getElementById('editToggle');
-        const saveChanges = document.getElementById('saveChanges');
-        let isEditing = false;
-
-        editToggle.addEventListener('click', () => {
-            isEditing = !isEditing;
-            const editableElements = document.querySelectorAll('h1, h2, h3, h4, p, span, .btn-hero, .btn-card');
-            
-            if (isEditing) {
-                editToggle.innerHTML = '<i class="fas fa-eye"></i> ปิดโหมดแก้ไข';
-                editToggle.classList.add('active');
-                saveChanges.style.display = 'block';
-                editableElements.forEach(el => {
-                    el.setAttribute('contenteditable', 'true');
-                    el.classList.add('editing-active');
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
                 });
-                alert('เปิดโหมดแก้ไขแล้ว: คุณสามารถคลิกที่ข้อความใดก็ได้เพื่อพิมพ์แก้ไข');
-            } else {
-                editToggle.innerHTML = '<i class="fas fa-edit"></i> เปิดโหมดแก้ไข';
-                editToggle.classList.remove('active');
-                saveChanges.style.display = 'none';
-                editableElements.forEach(el => {
-                    el.setAttribute('contenteditable', 'false');
-                    el.classList.remove('editing-active');
-                });
-            }
-        });
-
-        saveChanges.addEventListener('click', () => {
-            // Remove editing indicators before saving
-            const elements = document.querySelectorAll('.editing-active');
-            elements.forEach(el => el.classList.remove('editing-active'));
-            
-            // Get the current HTML
-            const htmlContent = document.documentElement.outerHTML;
-            const blob = new Blob([htmlContent], { type: 'text/html' });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = 'index.html';
-            a.click();
-            
-            alert('บันทึกสำเร็จ! ระบบจะดาวน์โหลดไฟล์ index.html ตัวใหม่ให้คุณนำไปอัปเดตใน GitHub ครับ');
+            });
         });
     </script>
 </body>
