@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html class="light" lang="th">
+
 <head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Executive Portfolio | จาตุรงค์ ทรงภักดี (Jaturong Songpakde)</title>
-    
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    
+
     <!-- Stylesheet -->
-    <link href="style.css" rel="stylesheet"/>
-    
+    <link href="style.css" rel="stylesheet" />
+
     <!-- Material Symbols for Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+
     <!-- Tailwind Configuration for Custom PEA Colors -->
     <script id="tailwind-config">
         tailwind.config = {
@@ -43,26 +46,40 @@
         }
     </script>
 </head>
-<body class="bg-light-bg dark:bg-dark-bg text-on-surface dark:text-on-surface-dark transition-colors duration-300 font-body">
+
+<body
+    class="bg-light-bg dark:bg-dark-bg text-on-surface dark:text-on-surface-dark transition-colors duration-300 font-body">
 
     <!-- Top Navigation -->
-    <header class="flex justify-between items-center px-6 md:px-12 py-4 w-full sticky top-0 z-50 glass-effect shadow-md">
+    <header
+        class="flex justify-between items-center px-6 md:px-12 py-4 w-full sticky top-0 z-50 glass-effect shadow-md">
         <div class="flex items-center gap-6">
-            <span class="text-xl font-bold tracking-tight bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent font-headline">
+            <span
+                class="text-xl font-bold tracking-tight bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent font-headline">
                 PEA Digital Portfolio
             </span>
             <nav class="hidden md:flex gap-6 items-center">
-                <a class="text-primary font-bold hover:text-secondary transition-all text-sm font-headline" href="#home">หน้าแรก</a>
-                <a class="text-on-surface/70 dark:text-on-surface-dark/70 hover:text-primary transition-all text-sm font-headline" href="#expertise">ความเชี่ยวชาญ</a>
-                <a class="text-on-surface/70 dark:text-on-surface-dark/70 hover:text-primary transition-all text-sm font-headline" href="#calculator">ระบบคำนวณพลังงาน</a>
-                <a class="text-on-surface/70 dark:text-on-surface-dark/70 hover:text-primary transition-all text-sm font-headline" href="#achievements">ผลงานประชาสัมพันธ์</a>
-                <a class="text-on-surface/70 dark:text-on-surface-dark/70 hover:text-primary transition-all text-sm font-headline" href="#education">ประวัติการศึกษา</a>
-                <a class="text-on-surface/70 dark:text-on-surface-dark/70 hover:text-primary transition-all text-sm font-headline" href="#prompt">Prompt</a>
+                <a class="text-primary font-bold hover:text-secondary transition-all text-sm font-headline"
+                    href="#home">หน้าแรก</a>
+                <a class="text-on-surface/70 dark:text-on-surface-dark/70 hover:text-primary transition-all text-sm font-headline"
+                    href="#expertise">ความเชี่ยวชาญ</a>
+                <a class="text-on-surface/70 dark:text-on-surface-dark/70 hover:text-primary transition-all text-sm font-headline"
+                    href="#portal">ระบบพอร์ทัล</a>
+                <a class="text-on-surface/70 dark:text-on-surface-dark/70 hover:text-primary transition-all text-sm font-headline"
+                    href="#calculator">ระบบคำนวณพลังงาน</a>
+                <a class="text-on-surface/70 dark:text-on-surface-dark/70 hover:text-primary transition-all text-sm font-headline"
+                    href="#achievements">ผลงานประชาสัมพันธ์</a>
+                <a class="text-on-surface/70 dark:text-on-surface-dark/70 hover:text-primary transition-all text-sm font-headline"
+                    href="#education">ประวัติการศึกษา</a>
+                <a class="text-on-surface/70 dark:text-on-surface-dark/70 hover:text-primary transition-all text-sm font-headline"
+                    href="#prompt">Prompt</a>
             </nav>
         </div>
         <div class="flex items-center gap-4">
             <!-- Theme Toggle Button -->
-            <button id="themeToggle" class="w-10 h-10 rounded-full flex items-center justify-center border border-primary/20 hover:bg-primary/10 transition-colors text-primary" aria-label="Toggle Theme">
+            <button id="themeToggle"
+                class="w-10 h-10 rounded-full flex items-center justify-center border border-primary/20 hover:bg-primary/10 transition-colors text-primary"
+                aria-label="Toggle Theme">
                 <span class="material-symbols-outlined block dark:hidden">dark_mode</span>
                 <span class="material-symbols-outlined hidden dark:block text-secondary">light_mode</span>
             </button>
@@ -71,38 +88,45 @@
                 <span class="block text-[9px] uppercase tracking-widest text-secondary font-bold font-headline">พชง. 7 ผรผ.กสฟ.น2</span>
                 <span class="block text-sm font-bold text-primary dark:text-primary-light font-headline">จาตุรงค์ ทรงภักดี</span>
             </div>
-            <img alt="จาตุรงค์ ทรงภักดี" class="w-10 h-10 rounded-full object-cover border-2 border-primary shadow-md" src="Profile .jpg"/>
+            <img alt="จาตุรงค์ ทรงภักดี" class="w-10 h-10 rounded-full object-cover border-2 border-primary shadow-md"
+                src="Profile .jpg" />
         </div>
     </header>
 
     <main class="max-w-7xl mx-auto px-4 md:px-8 py-8">
-        
+
         <!-- Hero Section -->
         <section id="home" class="mb-20 pt-4">
             <div class="flex flex-col lg:flex-row gap-12 items-center lg:items-stretch">
                 <!-- Text Intro -->
                 <div class="flex-1 flex flex-col justify-center">
-                    <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-primary/10 dark:bg-primary/20 text-primary dark:text-primary-light text-xs font-bold tracking-wider uppercase rounded-full mb-6 w-fit">
+                    <div
+                        class="inline-flex items-center gap-2 px-3 py-1.5 bg-primary/10 dark:bg-primary/20 text-primary dark:text-primary-light text-xs font-bold tracking-wider uppercase rounded-full mb-6 w-fit">
                         <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
                         PEA EXECUTIVE INFOGRAPHIC 2026
                     </div>
-                    
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-black leading-tight text-primary dark:text-primary-light mb-4 font-headline tracking-tight">
+
+                    <h1
+                        class="text-4xl md:text-5xl lg:text-6xl font-black leading-tight text-primary dark:text-primary-light mb-4 font-headline tracking-tight">
                         จาตุรงค์ ทรงภักดี
                     </h1>
                     <h2 class="text-xl md:text-2xl font-bold text-secondary mb-6 font-headline">
                         ตำแหน่ง พชง. 7 ผรผ.กสฟ.น2
                     </h2>
-                    
-                    <p class="text-base md:text-lg text-on-surface/80 dark:text-on-surface-dark/80 max-w-2xl leading-relaxed mb-8">
-                        วิทยากรผู้เชี่ยวชาญด้านระบบสายสื่อสารโครงสร้างพื้นฐานระดับองค์กร และผู้นำเทคโนโลยีพลังงานสะอาด (EV HomeCharging / EV Station) ร่วมขับเคลื่อนเป้าหมาย Net Zero ของการไฟฟ้าส่วนภูมิภาค (กฟภ.)
+
+                    <p
+                        class="text-base md:text-lg text-on-surface/80 dark:text-on-surface-dark/80 max-w-2xl leading-relaxed mb-8">
+                        วิทยากรผู้เชี่ยวชาญด้านระบบสายสื่อสารโครงสร้างพื้นฐานระดับองค์กร และผู้นำเทคโนโลยีพลังงานสะอาด
+                        (EV HomeCharging / EV Station) ร่วมขับเคลื่อนเป้าหมาย Net Zero ของการไฟฟ้าส่วนภูมิภาค (กฟภ.)
                     </p>
-                    
+
                     <div class="flex flex-wrap gap-4">
-                        <a href="GithubXGeminiCLI.pdf" target="_blank" class="bg-primary hover:bg-primary-dark text-white px-6 py-3.5 rounded-xl font-bold transition-all flex items-center gap-2 shadow-lg shadow-primary/20">
+                        <a href="GithubXGeminiCLI.pdf" target="_blank"
+                            class="bg-primary hover:bg-primary-dark text-white px-6 py-3.5 rounded-xl font-bold transition-all flex items-center gap-2 shadow-lg shadow-primary/20">
                             <span class="material-symbols-outlined">menu_book</span> ดูเอกสารประกอบการบรรยาย
                         </a>
-                        <a href="#calculator" class="border-2 border-secondary text-secondary hover:bg-secondary hover:text-white px-6 py-3.5 rounded-xl font-bold transition-all flex items-center gap-2">
+                        <a href="#calculator"
+                            class="border-2 border-secondary text-secondary hover:bg-secondary hover:text-white px-6 py-3.5 rounded-xl font-bold transition-all flex items-center gap-2">
                             <span class="material-symbols-outlined">calculate</span> คำนวณระบบพลังงาน
                         </a>
                     </div>
@@ -112,11 +136,15 @@
                 <div class="flex-shrink-0 flex items-center justify-center">
                     <div class="relative group">
                         <!-- Neon gradient glowing backdrop -->
-                        <div class="absolute -inset-1.5 bg-gradient-to-r from-primary to-secondary rounded-3xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
-                        
+                        <div
+                            class="absolute -inset-1.5 bg-gradient-to-r from-primary to-secondary rounded-3xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt">
+                        </div>
+
                         <div class="relative bg-white dark:bg-dark-surface p-4 rounded-2xl shadow-2xl">
-                            <img src="Profile .jpg" alt="จาตุรงค์ ทรงภักดี" class="w-64 h-64 md:w-72 md:h-72 rounded-xl object-cover border-4 border-primary/20">
-                            <div class="absolute bottom-6 right-6 bg-gradient-to-r from-primary to-primary-light text-white px-4 py-2.5 rounded-xl shadow-xl border border-white/20">
+                            <img src="Profile .jpg" alt="จาตุรงค์ ทรงภักดี"
+                                class="w-64 h-64 md:w-72 md:h-72 rounded-xl object-cover border-4 border-primary/20">
+                            <div
+                                class="absolute bottom-6 right-6 bg-gradient-to-r from-primary to-primary-light text-white px-4 py-2.5 rounded-xl shadow-xl border border-white/20">
                                 <span class="block text-xl font-black font-headline">พชง. 7</span>
                                 <span class="text-[9px] uppercase tracking-widest opacity-80">การไฟฟ้าส่วนภูมิภาค</span>
                             </div>
@@ -126,16 +154,20 @@
             </div>
 
             <!-- Hero cover banner with blur background -->
-            <div class="mt-16 h-[250px] md:h-[420px] w-full relative overflow-hidden rounded-3xl shadow-xl border border-primary/10">
-                <img alt="Hero Cover Background" class="w-full h-full object-cover" src="หน้าปก สำหรับ website.jpg"/>
+            <div
+                class="mt-16 h-[250px] md:h-[420px] w-full relative overflow-hidden rounded-3xl shadow-xl border border-primary/10">
+                <img alt="Hero Cover Background" class="w-full h-full object-cover" src="หน้าปก สำหรับ website.jpg" />
                 <div class="absolute inset-0 hero-overlay"></div>
                 <div class="absolute bottom-6 md:bottom-12 left-6 md:left-12 max-w-2xl text-left p-4 md:p-0">
-                    <span class="inline-block px-3 py-1 bg-secondary text-white text-[10px] md:text-xs font-bold rounded-lg mb-2 md:mb-4">วิสัยทัศน์และการประยุกต์ใช้เทคโนโลยี</span>
-                    <h2 class="text-2xl md:text-4xl font-extrabold text-primary-dark dark:text-white mb-2 md:mb-3 font-headline leading-tight">
+                    <span
+                        class="inline-block px-3 py-1 bg-secondary text-white text-[10px] md:text-xs font-bold rounded-lg mb-2 md:mb-4">วิสัยทัศน์และการประยุกต์ใช้เทคโนโลยี</span>
+                    <h2
+                        class="text-2xl md:text-4xl font-extrabold text-primary-dark dark:text-white mb-2 md:mb-3 font-headline leading-tight">
                         กฟภ. ยุคใหม่ ปลอดภัย ทันสมัย พลังงานสะอาด
                     </h2>
                     <p class="text-xs md:text-base text-on-surface/90 dark:text-white/80">
-                        บูรณาการระบบโครงข่ายสื่อสารที่มีเสถียรภาพสูงและระบบพลังงานแสงอาทิตย์ร่วมกับ EV เพื่อระบบจำหน่ายไฟฟ้าแห่งอนาคต
+                        บูรณาการระบบโครงข่ายสื่อสารที่มีเสถียรภาพสูงและระบบพลังงานแสงอาทิตย์ร่วมกับ EV
+                        เพื่อระบบจำหน่ายไฟฟ้าแห่งอนาคต
                     </p>
                 </div>
             </div>
@@ -149,7 +181,7 @@
                 </h2>
                 <div class="h-1 flex-1 bg-gradient-to-r from-primary to-transparent opacity-20 rounded"></div>
             </div>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Card 1 -->
                 <div class="glass-effect p-8 rounded-2xl border-b-4 border-primary hover-lift">
@@ -158,51 +190,233 @@
                     </div>
                     <h3 class="text-xl font-bold mb-3 font-headline">สายสื่อสาร & วิทยากร</h3>
                     <p class="text-on-surface/75 dark:text-on-surface-dark/75 leading-relaxed mb-6 text-sm">
-                        วิทยากรผู้บรรยายและที่ปรึกษาด้านเทคนิคระบบสายสื่อสารของบริษัทสายสื่อสาร ดำเนินงานจัดระเบียบและออกแบบโครงสร้างพื้นฐานเครือข่ายความเร็วสูง
+                        วิทยากรผู้บรรยายและที่ปรึกษาด้านเทคนิคระบบสายสื่อสารของบริษัทสายสื่อสาร
+                        ดำเนินงานจัดระเบียบและออกแบบโครงสร้างพื้นฐานเครือข่ายความเร็วสูง
                     </p>
                     <div class="flex justify-between items-center mb-1 text-xs font-bold">
                         <span class="text-primary">ระดับความเชี่ยวชาญ</span>
                         <span class="text-primary">95% (Mastery)</span>
                     </div>
                     <div class="w-full bg-primary/10 rounded-full h-2">
-                        <div class="bg-gradient-to-r from-primary to-primary-light h-2 rounded-full" style="width: 95%"></div>
+                        <div class="bg-gradient-to-r from-primary to-primary-light h-2 rounded-full" style="width: 95%">
+                        </div>
                     </div>
                 </div>
-                
+
                 <!-- Card 2 -->
                 <div class="glass-effect p-8 rounded-2xl border-b-4 border-secondary hover-lift">
-                    <div class="w-14 h-14 rounded-xl bg-secondary/10 flex items-center justify-center text-secondary mb-6">
+                    <div
+                        class="w-14 h-14 rounded-xl bg-secondary/10 flex items-center justify-center text-secondary mb-6">
                         <span class="material-symbols-outlined text-3xl">ev_station</span>
                     </div>
                     <h3 class="text-xl font-bold mb-3 font-headline">EV Charger & Station</h3>
                     <p class="text-on-surface/75 dark:text-on-surface-dark/75 leading-relaxed mb-6 text-sm">
-                        ผู้ตรวจสอบมาตรฐานและวิศวกรออกแบบระบบ EV HomeCharging และ EV Station สำหรับผู้ประกอบการ รวมถึงการเชื่อมโยงระบบเข้ากับระบบจำหน่ายของ กฟภ.
+                        ผู้ตรวจสอบมาตรฐานและวิศวกรออกแบบระบบ EV HomeCharging และ EV Station สำหรับผู้ประกอบการ
+                        รวมถึงการเชื่อมโยงระบบเข้ากับระบบจำหน่ายของ กฟภ.
                     </p>
                     <div class="flex justify-between items-center mb-1 text-xs font-bold">
                         <span class="text-secondary">ระดับความเชี่ยวชาญ</span>
                         <span class="text-secondary">90% (Specialist)</span>
                     </div>
                     <div class="w-full bg-secondary/10 rounded-full h-2">
-                        <div class="bg-gradient-to-r from-secondary to-secondary-light h-2 rounded-full" style="width: 90%"></div>
+                        <div class="bg-gradient-to-r from-secondary to-secondary-light h-2 rounded-full"
+                            style="width: 90%"></div>
                     </div>
                 </div>
-                
+
                 <!-- Card 3 -->
                 <div class="glass-effect p-8 rounded-2xl border-b-4 border-purple-600 hover-lift">
-                    <div class="w-14 h-14 rounded-xl bg-purple-600/10 flex items-center justify-center text-purple-600 mb-6">
+                    <div
+                        class="w-14 h-14 rounded-xl bg-purple-600/10 flex items-center justify-center text-purple-600 mb-6">
                         <span class="material-symbols-outlined text-3xl">psychology</span>
                     </div>
                     <h3 class="text-xl font-bold mb-3 font-headline">AI & Computer Engineering</h3>
                     <p class="text-on-surface/75 dark:text-on-surface-dark/75 leading-relaxed mb-6 text-sm">
-                        กำลังศึกษาระดับปริญญาโทสาขาวิศวกรรมคอมพิวเตอร์และปัญญาประดิษฐ์ มุ่งเน้นการใช้ Deep Learning วิเคราะห์ข้อมูลเพื่อคาดการณ์โหลดกระแสไฟฟ้า
+                        กำลังศึกษาระดับปริญญาโทสาขาวิศวกรรมคอมพิวเตอร์และปัญญาประดิษฐ์ มุ่งเน้นการใช้ Deep Learning
+                        วิเคราะห์ข้อมูลเพื่อคาดการณ์โหลดกระแสไฟฟ้า
                     </p>
                     <div class="flex justify-between items-center mb-1 text-xs font-bold">
                         <span class="text-purple-600">วิจัยและประยุกต์ใช้</span>
                         <span class="text-purple-600">85% (Researcher)</span>
                     </div>
                     <div class="w-full bg-purple-600/10 rounded-full h-2">
-                        <div class="bg-gradient-to-r from-purple-600 to-purple-400 h-2 rounded-full" style="width: 85%"></div>
+                        <div class="bg-gradient-to-r from-purple-600 to-purple-400 h-2 rounded-full" style="width: 85%">
+                        </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Digital Product & Web Application Section (PEA Affiliated Business Portal) -->
+        <section id="portal" class="mb-20 scroll-mt-24">
+            <div class="flex flex-col md:flex-row items-baseline gap-4 mb-10">
+                <h2 class="text-3xl font-extrabold text-primary dark:text-primary-light font-headline">
+                    ผลงานพัฒนาระบบดิจิทัล & เว็บแอปพลิเคชัน
+                </h2>
+                <div class="h-1 flex-1 bg-gradient-to-r from-primary to-transparent opacity-20 rounded"></div>
+            </div>
+
+            <div class="bg-gradient-to-br from-white via-white to-primary/5 dark:from-dark-surface dark:via-dark-surface dark:to-primary/10 rounded-3xl p-6 md:p-10 shadow-2xl border border-primary/15 relative overflow-hidden">
+                <!-- Background ambient lights -->
+                <div class="absolute -top-24 -right-24 w-80 h-80 bg-primary/10 dark:bg-primary/20 rounded-full blur-3xl pointer-events-none"></div>
+                <div class="absolute -bottom-24 -left-24 w-80 h-80 bg-secondary/10 dark:bg-secondary/20 rounded-full blur-3xl pointer-events-none"></div>
+
+                <!-- Top Header inside Card -->
+                <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 pb-8 border-b border-primary/10 relative z-10">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-secondary/15 text-secondary text-xs font-bold tracking-wider uppercase rounded-full mb-3">
+                            <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+                            WEB APPLICATION & MOBILE PWA PLATFORM
+                        </div>
+                        <h3 class="text-2xl md:text-3xl font-black font-headline text-primary dark:text-primary-light">
+                            PEA Affiliated Business Portal
+                        </h3>
+                        <p class="text-sm md:text-base text-on-surface/75 dark:text-on-surface-dark/75 mt-2 max-w-2xl leading-relaxed">
+                            ระบบพอร์ทัลศูนย์รวมธุรกิจเกี่ยวเนื่อง กฟภ. รองรับการเชื่อมต่อข้อมูลด้านพลังงานสะอาด ยานยนต์ไฟฟ้า (EV) และบริการวิศวกรรมไฟฟ้าครบวงจร
+                        </p>
+                    </div>
+
+                    <div class="flex flex-wrap gap-3">
+                        <a href="https://jaturongson-debug.github.io/PEA-Affiliated-Business-Portal/" target="_blank" rel="noopener noreferrer"
+                            class="bg-gradient-to-r from-secondary to-secondary-dark hover:from-secondary-dark hover:to-secondary text-white px-6 py-3.5 rounded-xl font-bold transition-all shadow-lg shadow-secondary/25 flex items-center gap-2">
+                            <span class="material-symbols-outlined">launch</span> เปิดเข้าสู่เว็บไซต์จริง
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Content Grid: Highlights, Installation Guide & QR Code -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 mt-8 items-stretch relative z-10">
+                    
+                    <!-- Left Column: Highlights & Step-by-Step Mobile Installation Guide -->
+                    <div class="lg:col-span-8 flex flex-col justify-between space-y-6">
+                        
+                        <!-- Feature Badges -->
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                            <div class="p-4 rounded-2xl bg-primary/5 dark:bg-primary/10 border border-primary/10">
+                                <div class="w-10 h-10 rounded-xl bg-primary/15 text-primary flex items-center justify-center mb-3">
+                                    <span class="material-symbols-outlined">devices</span>
+                                </div>
+                                <h4 class="font-bold text-sm text-primary dark:text-primary-light font-headline">Responsive & PWA</h4>
+                                <p class="text-xs text-on-surface/70 dark:text-on-surface-dark/70 mt-1">
+                                    รองรับทั้งคอมพิวเตอร์ แท็บเล็ต และติดตั้งบนหน้าจอมือถือได้เสมือนแอปพลิเคชัน
+                                </p>
+                            </div>
+
+                            <div class="p-4 rounded-2xl bg-secondary/5 dark:bg-secondary/10 border border-secondary/10">
+                                <div class="w-10 h-10 rounded-xl bg-secondary/15 text-secondary flex items-center justify-center mb-3">
+                                    <span class="material-symbols-outlined">hub</span>
+                                </div>
+                                <h4 class="font-bold text-sm text-secondary font-headline">Affiliated Business Hub</h4>
+                                <p class="text-xs text-on-surface/70 dark:text-on-surface-dark/70 mt-1">
+                                    ศูนย์รวมข้อมูลธุรกิจเกี่ยวเนื่อง พลังงานทางเลือก และโซลูชันนวัตกรรมของ กฟภ.
+                                </p>
+                            </div>
+
+                            <div class="p-4 rounded-2xl bg-purple-500/5 dark:bg-purple-500/10 border border-purple-500/10">
+                                <div class="w-10 h-10 rounded-xl bg-purple-500/15 text-purple-600 dark:text-purple-400 flex items-center justify-center mb-3">
+                                    <span class="material-symbols-outlined">speed</span>
+                                </div>
+                                <h4 class="font-bold text-sm text-purple-600 dark:text-purple-400 font-headline">Fast & Modern UI</h4>
+                                <p class="text-xs text-on-surface/70 dark:text-on-surface-dark/70 mt-1">
+                                    สถาปัตยกรรมเว็บสมัยใหม่ ทำงานรวดเร็ว ปลอดภัย สวยงาม และใช้งานง่าย
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Mobile Installation Guide (Add to Home Screen) -->
+                        <div class="rounded-2xl p-6 bg-white/80 dark:bg-dark-surface/80 border border-primary/15 shadow-sm">
+                            <div class="flex items-center justify-between mb-4 flex-wrap gap-2">
+                                <div class="flex items-center gap-2">
+                                    <span class="material-symbols-outlined text-secondary text-2xl">install_mobile</span>
+                                    <h4 class="text-lg font-bold font-headline text-primary dark:text-primary-light">
+                                        วิธีการติดตั้งในโทรศัพท์มือถือ (Add to Home Screen)
+                                    </h4>
+                                </div>
+                                <button type="button" onclick="openInstallImageModal()" 
+                                    class="text-xs font-bold text-secondary hover:text-secondary-dark flex items-center gap-1 transition-colors px-2 py-1 rounded-lg hover:bg-secondary/10">
+                                    <span class="material-symbols-outlined text-sm">visibility</span> ดูภาพประกอบคำแนะนำ
+                                </button>
+                            </div>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <!-- iPhone Safari Guide -->
+                                <div class="p-4 rounded-xl bg-gray-50 dark:bg-dark-bg/60 border border-gray-200/80 dark:border-white/10">
+                                    <div class="flex items-center gap-2 mb-3 pb-2 border-b border-gray-200 dark:border-white/10">
+                                        <span class="material-symbols-outlined text-primary text-xl">phone_iphone</span>
+                                        <span class="font-bold text-sm font-headline text-primary dark:text-primary-light">iPhone (Safari)</span>
+                                    </div>
+                                    <ol class="space-y-3 text-xs text-on-surface/80 dark:text-on-surface-dark/80 leading-relaxed">
+                                        <li class="flex items-start gap-2.5">
+                                            <span class="w-5 h-5 rounded-full bg-primary/10 text-primary font-bold flex items-center justify-center flex-shrink-0 text-[10px] mt-0.5">1</span>
+                                            <span>เปิดเว็บที่ต้องการบนเบราว์เซอร์ <strong>Safari</strong></span>
+                                        </li>
+                                        <li class="flex items-start gap-2.5">
+                                            <span class="w-5 h-5 rounded-full bg-primary/10 text-primary font-bold flex items-center justify-center flex-shrink-0 text-[10px] mt-0.5">2</span>
+                                            <span>แตะไอคอน <strong>แชร์</strong> (รูปสี่เหลี่ยมมีลูกศรชี้ขึ้น) ที่แถบด้านล่าง</span>
+                                        </li>
+                                        <li class="flex items-start gap-2.5">
+                                            <span class="w-5 h-5 rounded-full bg-primary/10 text-primary font-bold flex items-center justify-center flex-shrink-0 text-[10px] mt-0.5">3</span>
+                                            <span>เลือก <strong>"เพิ่มไปยังหน้าจอโฮม"</strong> (Add to Home Screen)</span>
+                                        </li>
+                                    </ol>
+                                </div>
+
+                                <!-- Android Chrome Guide -->
+                                <div class="p-4 rounded-xl bg-gray-50 dark:bg-dark-bg/60 border border-gray-200/80 dark:border-white/10">
+                                    <div class="flex items-center gap-2 mb-3 pb-2 border-b border-gray-200 dark:border-white/10">
+                                        <span class="material-symbols-outlined text-secondary text-xl">android</span>
+                                        <span class="font-bold text-sm font-headline text-secondary">Android (Chrome)</span>
+                                    </div>
+                                    <ol class="space-y-3 text-xs text-on-surface/80 dark:text-on-surface-dark/80 leading-relaxed">
+                                        <li class="flex items-start gap-2.5">
+                                            <span class="w-5 h-5 rounded-full bg-secondary/15 text-secondary font-bold flex items-center justify-center flex-shrink-0 text-[10px] mt-0.5">1</span>
+                                            <span>เปิดเว็บที่ต้องการบนเบราว์เซอร์ <strong>Google Chrome</strong></span>
+                                        </li>
+                                        <li class="flex items-start gap-2.5">
+                                            <span class="w-5 h-5 rounded-full bg-secondary/15 text-secondary font-bold flex items-center justify-center flex-shrink-0 text-[10px] mt-0.5">2</span>
+                                            <span>แตะไอคอน <strong>จุด 3 จุด</strong> มุมขวาบนของหน้าจอ</span>
+                                        </li>
+                                        <li class="flex items-start gap-2.5">
+                                            <span class="w-5 h-5 rounded-full bg-secondary/15 text-secondary font-bold flex items-center justify-center flex-shrink-0 text-[10px] mt-0.5">3</span>
+                                            <span>เลือก <strong>"เพิ่มลงในหน้าจอหลัก"</strong> (Add to Home screen)</span>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Right Column: Dedicated QR Code Scanner Card (4 Cols) -->
+                    <div class="lg:col-span-4 bg-gradient-to-br from-primary to-primary-dark text-white p-6 md:p-8 rounded-3xl flex flex-col justify-between items-center text-center shadow-xl border border-white/10 relative overflow-hidden">
+                        <div class="relative z-10 w-full flex flex-col items-center">
+                            <span class="text-xs uppercase tracking-widest bg-white/20 px-3 py-1 rounded-full font-bold mb-4 inline-block">
+                                Mobile Access
+                            </span>
+                            <h4 class="text-xl font-bold font-headline mb-2">สแกนเปิดใช้งานบนมือถือ</h4>
+                            <p class="text-xs text-white/80 mb-6 leading-relaxed">
+                                ใช้กล้องมือถือสแกน QR Code ด้านล่างเพื่อเข้าสู่ PEA Affiliated Business Portal ได้ทันที
+                            </p>
+
+                            <!-- QR Code with container -->
+                            <div class="relative group cursor-pointer p-4 bg-white rounded-2xl shadow-2xl transition-transform duration-300 group-hover:scale-105" onclick="openQrModal()">
+                                <img src="QR Code Website .png" alt="QR Code PEA Affiliated Business Portal" class="w-48 h-48 object-contain">
+                                <div class="absolute inset-0 bg-primary/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                    <span class="bg-primary/80 text-white text-[10px] px-2.5 py-1 rounded-lg backdrop-blur-sm">กดเพื่อขยายภาพ</span>
+                                </div>
+                            </div>
+
+                            <a href="https://jaturongson-debug.github.io/PEA-Affiliated-Business-Portal/" target="_blank" rel="noopener noreferrer" 
+                                class="mt-5 text-[11px] text-secondary-light hover:underline font-mono break-all inline-flex items-center gap-1">
+                                <span class="material-symbols-outlined text-xs">link</span> https://jaturongson-debug.github.io/PEA-Affiliated-Business-Portal/
+                            </a>
+                        </div>
+
+                        <div class="relative z-10 pt-4 mt-6 border-t border-white/15 w-full text-[11px] text-white/70">
+                            ✨ แนะนำให้กด Add to Home Screen เพื่อใช้งานได้เสมือน App บนมือถือ
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -218,14 +432,17 @@
 
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
                 <!-- Calculator Inputs & Selectors -->
-                <div class="lg:col-span-7 bg-white dark:bg-dark-surface p-6 md:p-8 rounded-3xl shadow-xl border border-primary/10 calc-card flex flex-col justify-between">
+                <div
+                    class="lg:col-span-7 bg-white dark:bg-dark-surface p-6 md:p-8 rounded-3xl shadow-xl border border-primary/10 calc-card flex flex-col justify-between">
                     <div>
                         <!-- Tabs for Calculator Type -->
                         <div class="flex gap-4 border-b border-primary/10 pb-4 mb-6">
-                            <button id="btnCalcEv" class="flex items-center gap-2 font-bold font-headline text-primary border-b-2 border-primary pb-2 px-2 transition-all">
+                            <button id="btnCalcEv"
+                                class="flex items-center gap-2 font-bold font-headline text-primary border-b-2 border-primary pb-2 px-2 transition-all">
                                 <span class="material-symbols-outlined">directions_car</span> คำนวณชาร์จ EV
                             </button>
-                            <button id="btnCalcSolar" class="flex items-center gap-2 font-bold font-headline text-on-surface/50 dark:text-on-surface-dark/50 hover:text-primary pb-2 px-2 transition-all">
+                            <button id="btnCalcSolar"
+                                class="flex items-center gap-2 font-bold font-headline text-on-surface/50 dark:text-on-surface-dark/50 hover:text-primary pb-2 px-2 transition-all">
                                 <span class="material-symbols-outlined">solar_power</span> คำนวณ Solar Rooftop
                             </button>
                         </div>
@@ -235,11 +452,14 @@
                             <!-- Slider 1: Battery Capacity -->
                             <div>
                                 <div class="flex justify-between mb-2">
-                                    <label class="text-sm font-bold text-on-surface/80 dark:text-on-surface-dark/80">ความจุแบตเตอรี่รถยนต์ (Battery Capacity)</label>
+                                    <label
+                                        class="text-sm font-bold text-on-surface/80 dark:text-on-surface-dark/80">ความจุแบตเตอรี่รถยนต์
+                                        (Battery Capacity)</label>
                                     <span class="text-primary font-bold"><span id="valEvCap">40</span> kWh</span>
                                 </div>
                                 <input type="range" id="sliderEvCap" min="10" max="100" value="40" step="5">
-                                <div class="flex justify-between text-[10px] text-on-surface/40 dark:text-on-surface-dark/40 mt-1">
+                                <div
+                                    class="flex justify-between text-[10px] text-on-surface/40 dark:text-on-surface-dark/40 mt-1">
                                     <span>10 kWh (Plug-in Hybrid)</span>
                                     <span>100 kWh (Premium EV)</span>
                                 </div>
@@ -248,7 +468,9 @@
                             <!-- Slider 2: Current Charge -->
                             <div>
                                 <div class="flex justify-between mb-2">
-                                    <label class="text-sm font-bold text-on-surface/80 dark:text-on-surface-dark/80">ปริมาณแบตเตอรี่ปัจจุบัน (Current State)</label>
+                                    <label
+                                        class="text-sm font-bold text-on-surface/80 dark:text-on-surface-dark/80">ปริมาณแบตเตอรี่ปัจจุบัน
+                                        (Current State)</label>
                                     <span class="text-primary font-bold"><span id="valEvCurrent">20</span> %</span>
                                 </div>
                                 <input type="range" id="sliderEvCurrent" min="0" max="95" value="20" step="5">
@@ -257,7 +479,9 @@
                             <!-- Slider 3: Target Charge -->
                             <div>
                                 <div class="flex justify-between mb-2">
-                                    <label class="text-sm font-bold text-on-surface/80 dark:text-on-surface-dark/80">ปริมาณแบตเตอรี่เป้าหมาย (Target State)</label>
+                                    <label
+                                        class="text-sm font-bold text-on-surface/80 dark:text-on-surface-dark/80">ปริมาณแบตเตอรี่เป้าหมาย
+                                        (Target State)</label>
                                     <span class="text-primary font-bold"><span id="valEvTarget">80</span> %</span>
                                 </div>
                                 <input type="range" id="sliderEvTarget" min="5" max="100" value="80" step="5">
@@ -265,8 +489,11 @@
 
                             <!-- Dropdown: Charger Type (Power) -->
                             <div>
-                                <label class="block text-sm font-bold text-on-surface/80 dark:text-on-surface-dark/80 mb-2">ประเภทเครื่องชาร์จ (Power Rating)</label>
-                                <select id="selectEvCharger" class="w-full rounded-xl border border-primary/20 bg-white dark:bg-dark-bg px-4 py-3 text-sm focus:border-primary focus:ring-primary dark:text-on-surface-dark">
+                                <label
+                                    class="block text-sm font-bold text-on-surface/80 dark:text-on-surface-dark/80 mb-2">ประเภทเครื่องชาร์จ
+                                    (Power Rating)</label>
+                                <select id="selectEvCharger"
+                                    class="w-full rounded-xl border border-primary/20 bg-white dark:bg-dark-bg px-4 py-3 text-sm focus:border-primary focus:ring-primary dark:text-on-surface-dark">
                                     <option value="3.7">ชาร์จบ้านปกติ (AC Home Plug) - 3.7 kW</option>
                                     <option value="7.4" selected>ชาร์จบ้านมาตรฐาน (AC Wallbox 1-Phase) - 7.4 kW</option>
                                     <option value="11">ชาร์จบ้าน 3 เฟส (AC Wallbox 3-Phase) - 11 kW</option>
@@ -282,11 +509,15 @@
                             <!-- Slider 1: Monthly Bill -->
                             <div>
                                 <div class="flex justify-between mb-2">
-                                    <label class="text-sm font-bold text-on-surface/80 dark:text-on-surface-dark/80">ค่าไฟฟ้าเฉลี่ยต่อเดือน (Monthly Electric Bill)</label>
-                                    <span class="text-secondary font-bold"><span id="valSolarBill">5,000</span> บาท</span>
+                                    <label
+                                        class="text-sm font-bold text-on-surface/80 dark:text-on-surface-dark/80">ค่าไฟฟ้าเฉลี่ยต่อเดือน
+                                        (Monthly Electric Bill)</label>
+                                    <span class="text-secondary font-bold"><span id="valSolarBill">5,000</span>
+                                        บาท</span>
                                 </div>
                                 <input type="range" id="sliderSolarBill" min="1500" max="25000" value="5000" step="500">
-                                <div class="flex justify-between text-[10px] text-on-surface/40 dark:text-on-surface-dark/40 mt-1">
+                                <div
+                                    class="flex justify-between text-[10px] text-on-surface/40 dark:text-on-surface-dark/40 mt-1">
                                     <span>1,500 บาท</span>
                                     <span>25,000 บาท</span>
                                 </div>
@@ -295,85 +526,104 @@
                             <!-- Slider 2: System Size -->
                             <div>
                                 <div class="flex justify-between mb-2">
-                                    <label class="text-sm font-bold text-on-surface/80 dark:text-on-surface-dark/80">ขนาดระบบ Solar Rooftop ที่ติดตั้ง (System Size)</label>
+                                    <label
+                                        class="text-sm font-bold text-on-surface/80 dark:text-on-surface-dark/80">ขนาดระบบ
+                                        Solar Rooftop ที่ติดตั้ง (System Size)</label>
                                     <span class="text-secondary font-bold"><span id="valSolarSize">5</span> kWp</span>
                                 </div>
                                 <input type="range" id="sliderSolarSize" min="3" max="20" value="5" step="1">
-                                <div class="flex justify-between text-[10px] text-on-surface/40 dark:text-on-surface-dark/40 mt-1">
+                                <div
+                                    class="flex justify-between text-[10px] text-on-surface/40 dark:text-on-surface-dark/40 mt-1">
                                     <span>3 kWp (สำหรับบ้านขนาดเล็ก)</span>
                                     <span>20 kWp (สำหรับบ้านขนาดใหญ่/สำนักงาน)</span>
                                 </div>
                             </div>
 
                             <!-- Info Note -->
-                            <div class="p-4 bg-secondary/5 rounded-xl border-l-4 border-secondary text-xs text-on-surface/70 dark:text-on-surface-dark/70">
-                                *การคำนวณอ้างอิงจากชั่วโมงแสงแดดเฉลี่ยของประเทศไทย 4.5 ชั่วโมงต่อวัน และอัตราค่าไฟเฉลี่ยประเภท 1.1.2 ของ กฟภ. (4.42 บาท/หน่วย)
+                            <div
+                                class="p-4 bg-secondary/5 rounded-xl border-l-4 border-secondary text-xs text-on-surface/70 dark:text-on-surface-dark/70">
+                                *การคำนวณอ้างอิงจากชั่วโมงแสงแดดเฉลี่ยของประเทศไทย 4.5 ชั่วโมงต่อวัน
+                                และอัตราค่าไฟเฉลี่ยประเภท 1.1.2 ของ กฟภ. (4.42 บาท/หน่วย)
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Calculator Dashboard Output -->
-                <div class="lg:col-span-5 bg-gradient-to-br from-primary to-primary-dark text-white p-6 md:p-8 rounded-3xl flex flex-col justify-between shadow-2xl relative overflow-hidden">
+                <div
+                    class="lg:col-span-5 bg-gradient-to-br from-primary to-primary-dark text-white p-6 md:p-8 rounded-3xl flex flex-col justify-between shadow-2xl relative overflow-hidden">
                     <!-- Background abstract light -->
                     <div class="absolute -right-20 -bottom-20 w-64 h-64 bg-secondary/20 rounded-full blur-3xl"></div>
-                    
+
                     <div class="relative z-10">
-                        <span class="text-xs uppercase tracking-widest bg-white/20 px-3 py-1 rounded-full font-bold mb-8 inline-block">PEA Smart Analytics</span>
-                        
+                        <span
+                            class="text-xs uppercase tracking-widest bg-white/20 px-3 py-1 rounded-full font-bold mb-8 inline-block">PEA
+                            Smart Analytics</span>
+
                         <!-- EV Dashboard -->
                         <div id="dashboardEv" class="space-y-6">
-                            <h3 class="text-2xl font-black font-headline border-b border-white/20 pb-2">ผลการประเมินการชาร์จ</h3>
-                            
+                            <h3 class="text-2xl font-black font-headline border-b border-white/20 pb-2">
+                                ผลการประเมินการชาร์จ</h3>
+
                             <div>
                                 <span class="block text-xs opacity-75 uppercase">ปริมาณพลังงานที่ต้องชาร์จเพิ่ม</span>
-                                <span class="text-4xl font-extrabold font-headline text-secondary-light"><span id="outEvEnergy">24.0</span> <span class="text-xl">kWh</span></span>
+                                <span class="text-4xl font-extrabold font-headline text-secondary-light"><span
+                                        id="outEvEnergy">24.0</span> <span class="text-xl">kWh</span></span>
                             </div>
-                            
+
                             <div class="grid grid-cols-2 gap-4">
                                 <div>
                                     <span class="block text-[11px] opacity-75">เวลาที่ใช้โดยประมาณ</span>
-                                    <span class="text-2xl font-bold font-headline text-white"><span id="outEvTime">3 ชม. 14 นาที</span></span>
+                                    <span class="text-2xl font-bold font-headline text-white"><span id="outEvTime">3 ชม.
+                                            14 นาที</span></span>
                                 </div>
                                 <div>
                                     <span class="block text-[11px] opacity-75">ค่าใช้จ่าย (PEA Standard)</span>
-                                    <span class="text-2xl font-bold font-headline text-white">~<span id="outEvCost">113</span> บาท</span>
+                                    <span class="text-2xl font-bold font-headline text-white">~<span
+                                            id="outEvCost">113</span> บาท</span>
                                 </div>
                             </div>
-                            
+
                             <div class="p-4 bg-white/10 rounded-xl border border-white/10 text-xs leading-relaxed">
                                 <span class="font-bold text-secondary-light flex items-center gap-1 mb-1">
                                     <span class="material-symbols-outlined text-sm">savings</span> PEA TOU Tips:
                                 </span>
-                                ชาร์จช่วง Off-Peak (หลัง 22.00 น.) จะช่วยประหยัดค่าไฟได้ประมาณ <strong class="text-secondary-light text-sm"><span id="outEvSaving">50</span> บาท</strong> ต่อการชาร์จครั้งนี้!
+                                ชาร์จช่วง Off-Peak (หลัง 22.00 น.) จะช่วยประหยัดค่าไฟได้ประมาณ <strong
+                                    class="text-secondary-light text-sm"><span id="outEvSaving">50</span> บาท</strong>
+                                ต่อการชาร์จครั้งนี้!
                             </div>
                         </div>
 
                         <!-- Solar Dashboard (Hidden by default) -->
                         <div id="dashboardSolar" class="space-y-6 hidden">
-                            <h3 class="text-2xl font-black font-headline border-b border-white/20 pb-2">ผลประโยชน์พลังงานแสงอาทิตย์</h3>
-                            
+                            <h3 class="text-2xl font-black font-headline border-b border-white/20 pb-2">
+                                ผลประโยชน์พลังงานแสงอาทิตย์</h3>
+
                             <div>
                                 <span class="block text-xs opacity-75 uppercase">การผลิตพลังงานไฟฟ้าประมาณการ</span>
-                                <span class="text-4xl font-extrabold font-headline text-secondary-light"><span id="outSolarGen">675</span> <span class="text-xl">หน่วย/เดือน</span></span>
+                                <span class="text-4xl font-extrabold font-headline text-secondary-light"><span
+                                        id="outSolarGen">675</span> <span class="text-xl">หน่วย/เดือน</span></span>
                             </div>
-                            
+
                             <div class="grid grid-cols-2 gap-4">
                                 <div>
                                     <span class="block text-[11px] opacity-75">ประหยัดค่าไฟได้สูงสุด</span>
-                                    <span class="text-2xl font-bold font-headline text-white"><span id="outSolarSavings">2,983</span> บาท/เดือน</span>
+                                    <span class="text-2xl font-bold font-headline text-white"><span
+                                            id="outSolarSavings">2,983</span> บาท/เดือน</span>
                                 </div>
                                 <div>
                                     <span class="block text-[11px] opacity-75">ระยะเวลาคืนทุนโดยประมาณ</span>
-                                    <span class="text-2xl font-bold font-headline text-white">~<span id="outSolarPayback">5.0</span> ปี</span>
+                                    <span class="text-2xl font-bold font-headline text-white">~<span
+                                            id="outSolarPayback">5.0</span> ปี</span>
                                 </div>
                             </div>
-                            
+
                             <div>
                                 <span class="block text-xs opacity-75 mb-1 uppercase">การช่วยลดการปล่อยก๊าซ CO2</span>
                                 <div class="flex items-center gap-2">
                                     <span class="material-symbols-outlined text-green-300">eco</span>
-                                    <span class="text-lg font-bold font-headline"><span id="outSolarCo2">4.7</span> ตัน CO2 / ปี</span>
+                                    <span class="text-lg font-bold font-headline"><span id="outSolarCo2">4.7</span> ตัน
+                                        CO2 / ปี</span>
                                 </div>
                             </div>
                         </div>
@@ -397,19 +647,28 @@
 
             <!-- Categories Tabs -->
             <div class="flex flex-wrap gap-2 md:gap-4 border-b border-primary/10 pb-4 mb-8">
-                <button class="tab-btn active px-4 py-2 text-sm font-bold font-headline transition-all" data-category="all">
+                <button class="tab-btn active px-4 py-2 text-sm font-bold font-headline transition-all"
+                    data-category="all">
                     ผลงานทั้งหมด
                 </button>
-                <button class="tab-btn px-4 py-2 text-sm font-bold font-headline text-on-surface/60 dark:text-on-surface-dark/60 hover:text-primary transition-all" data-category="comm">
+                <button
+                    class="tab-btn px-4 py-2 text-sm font-bold font-headline text-on-surface/60 dark:text-on-surface-dark/60 hover:text-primary transition-all"
+                    data-category="comm">
                     วิทยากรสายสื่อสาร
                 </button>
-                <button class="tab-btn px-4 py-2 text-sm font-bold font-headline text-on-surface/60 dark:text-on-surface-dark/60 hover:text-primary transition-all" data-category="ev">
+                <button
+                    class="tab-btn px-4 py-2 text-sm font-bold font-headline text-on-surface/60 dark:text-on-surface-dark/60 hover:text-primary transition-all"
+                    data-category="ev">
                     ยานยนต์ไฟฟ้า EV
                 </button>
-                <button class="tab-btn px-4 py-2 text-sm font-bold font-headline text-on-surface/60 dark:text-on-surface-dark/60 hover:text-primary transition-all" data-category="solar">
+                <button
+                    class="tab-btn px-4 py-2 text-sm font-bold font-headline text-on-surface/60 dark:text-on-surface-dark/60 hover:text-primary transition-all"
+                    data-category="solar">
                     พลังงานแสงอาทิตย์
                 </button>
-                <button class="tab-btn px-4 py-2 text-sm font-bold font-headline text-on-surface/60 dark:text-on-surface-dark/60 hover:text-primary transition-all" data-category="present">
+                <button
+                    class="tab-btn px-4 py-2 text-sm font-bold font-headline text-on-surface/60 dark:text-on-surface-dark/60 hover:text-primary transition-all"
+                    data-category="present">
                     การนำเสนอระดับผู้บริหาร
                 </button>
             </div>
@@ -421,34 +680,47 @@
         </section>
 
         <!-- Education Roadmap -->
-        <section id="education" class="mb-20 scroll-mt-24 bg-gradient-to-br from-primary/5 to-secondary/5 dark:from-dark-surface dark:to-dark-surface/50 px-6 py-16 md:p-16 rounded-3xl border border-primary/10">
+        <section id="education"
+            class="mb-20 scroll-mt-24 bg-gradient-to-br from-primary/5 to-secondary/5 dark:from-dark-surface dark:to-dark-surface/50 px-6 py-16 md:p-16 rounded-3xl border border-primary/10">
             <h2 class="text-3xl font-extrabold text-primary dark:text-primary-light mb-12 text-center font-headline">
                 เส้นทางการศึกษา (Educational Roadmap)
             </h2>
             <div class="max-w-3xl mx-auto relative">
                 <!-- Vertical Line -->
-                <div class="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-gradient-to-b from-primary to-secondary opacity-35 rounded"></div>
-                
+                <div
+                    class="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-gradient-to-b from-primary to-secondary opacity-35 rounded">
+                </div>
+
                 <div class="space-y-12">
                     <!-- Step 1: Bachelor's -->
                     <div class="relative flex flex-col md:flex-row items-stretch justify-between">
                         <div class="w-full md:w-5/12 text-left md:text-right md:pr-12 pl-10 md:pl-0 mb-4 md:mb-0">
-                            <span class="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-lg mb-2">สำเร็จการศึกษา</span>
-                            <h4 class="text-lg md:text-xl font-bold text-primary dark:text-primary-light font-headline">ปริญญาตรี เทคโนโลยีไฟฟ้า</h4>
-                            <p class="text-sm text-on-surface/70 dark:text-on-surface-dark/70 mt-1">ผู้ชำนาญการด้านระบบไฟฟ้าและเทคโนโลยีพลังงานประยุกต์</p>
+                            <span
+                                class="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-lg mb-2">สำเร็จการศึกษา</span>
+                            <h4 class="text-lg md:text-xl font-bold text-primary dark:text-primary-light font-headline">
+                                ปริญญาตรี เทคโนโลยีไฟฟ้า</h4>
+                            <p class="text-sm text-on-surface/70 dark:text-on-surface-dark/70 mt-1">
+                                ผู้ชำนาญการด้านระบบไฟฟ้าและเทคโนโลยีพลังงานประยุกต์</p>
                         </div>
-                        <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center font-bold z-10 shadow-lg">01</div>
+                        <div
+                            class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center font-bold z-10 shadow-lg">
+                            01</div>
                         <div class="w-full md:w-5/12 pl-10 md:pl-12"></div>
                     </div>
 
                     <!-- Step 2: Master's -->
                     <div class="relative flex flex-col md:flex-row items-stretch justify-between">
                         <div class="w-full md:w-5/12 md:pr-12 pl-10 md:pl-0 order-2 md:order-1"></div>
-                        <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 rounded-full bg-secondary text-white flex items-center justify-center font-bold z-10 shadow-lg animate-pulse">02</div>
+                        <div
+                            class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 rounded-full bg-secondary text-white flex items-center justify-center font-bold z-10 shadow-lg animate-pulse">
+                            02</div>
                         <div class="w-full md:w-5/12 text-left md:pl-12 pl-10 md:pl-0 order-1 md:order-2">
-                            <span class="inline-block px-3 py-1 bg-secondary/20 text-secondary text-xs font-bold rounded-lg mb-2 animate-pulse">กำลังศึกษา</span>
-                            <h4 class="text-lg md:text-xl font-bold text-secondary font-headline">ปริญญาโท วิศวกรรมคอมพิวเตอร์ และปัญญาประดิษฐ์</h4>
-                            <p class="text-sm text-on-surface/70 dark:text-on-surface-dark/70 mt-1">มุ่งเน้นการพัฒนาและผสานปัญญาประดิษฐ์ (AI) ในงานพลังงานสะอาดและวิศวกรรมไฟฟ้าสมัยใหม่</p>
+                            <span
+                                class="inline-block px-3 py-1 bg-secondary/20 text-secondary text-xs font-bold rounded-lg mb-2 animate-pulse">กำลังศึกษา</span>
+                            <h4 class="text-lg md:text-xl font-bold text-secondary font-headline">ปริญญาโท
+                                วิศวกรรมคอมพิวเตอร์ และปัญญาประดิษฐ์</h4>
+                            <p class="text-sm text-on-surface/70 dark:text-on-surface-dark/70 mt-1">
+                                มุ่งเน้นการพัฒนาและผสานปัญญาประดิษฐ์ (AI) ในงานพลังงานสะอาดและวิศวกรรมไฟฟ้าสมัยใหม่</p>
                         </div>
                     </div>
                 </div>
@@ -457,7 +729,8 @@
 
         <!-- Prompt Section -->
         <section id="prompt" class="mb-20 scroll-mt-24">
-            <div class="bg-gradient-to-br from-primary to-primary-dark text-white p-8 md:p-12 rounded-3xl relative overflow-hidden shadow-2xl">
+            <div
+                class="bg-gradient-to-br from-primary to-primary-dark text-white p-8 md:p-12 rounded-3xl relative overflow-hidden shadow-2xl">
                 <!-- Abstract floating code bracket in background -->
                 <div class="absolute top-0 right-0 p-8 opacity-5">
                     <span class="material-symbols-outlined text-[18rem]">code</span>
@@ -466,14 +739,18 @@
                     <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
                         <div>
                             <h2 class="text-2xl md:text-3xl font-black font-headline">Copy Prompt for Gemini CLI</h2>
-                            <p class="text-xs text-white/70 mt-1">คัดลอกรายละเอียดคำสั่งระบบเพื่อใช้ทดสอบกับระบบ Gemini CLI</p>
+                            <p class="text-xs text-white/70 mt-1">คัดลอกรายละเอียดคำสั่งระบบเพื่อใช้ทดสอบกับระบบ Gemini
+                                CLI</p>
                         </div>
-                        <button id="copyBtn" class="bg-white text-primary px-6 py-3 rounded-xl font-bold hover:bg-secondary-light hover:text-white transition-all flex items-center gap-2 self-stretch md:self-auto justify-center shadow-lg">
+                        <button id="copyBtn"
+                            class="bg-white text-primary px-6 py-3 rounded-xl font-bold hover:bg-secondary-light hover:text-white transition-all flex items-center gap-2 self-stretch md:self-auto justify-center shadow-lg">
                             <span class="material-symbols-outlined">content_copy</span> คัดลอก Prompt
                         </button>
                     </div>
-                    <div class="bg-black/30 p-6 rounded-2xl backdrop-blur-md border border-white/10 font-mono text-[11px] md:text-xs leading-relaxed overflow-x-auto text-white/80">
-                        <pre id="promptText" class="whitespace-pre-wrap">จงสร้าง website แบบ onesingle page แบบ modern สร้างโดยใช้ HTML 5 และ CSS 
+                    <div
+                        class="bg-black/30 p-6 rounded-2xl backdrop-blur-md border border-white/10 font-mono text-[11px] md:text-xs leading-relaxed overflow-x-auto text-white/80">
+                        <pre id="promptText"
+                            class="whitespace-pre-wrap">จงสร้าง website แบบ onesingle page แบบ modern สร้างโดยใช้ HTML 5 และ CSS 
 โดยมีข้อมูลดังนี้ 
 1. ชื่อ จาตุรงค์ ทรงภักดี Jaturong Songpakde
 2. ตำแหน่ง พชง. 7 ผรผ.กสฟ.น2 
@@ -491,41 +768,52 @@
         <!-- Signature Section -->
         <section class="flex flex-col md:flex-row justify-between items-center py-12 border-t border-primary/10 gap-8">
             <div class="flex items-center gap-6">
-                <img alt="จาตุรงค์ ทรงภักดี" class="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover border-4 border-primary/20 shadow-md" src="Profile .jpg"/>
+                <img alt="จาตุรงค์ ทรงภักดี"
+                    class="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover border-4 border-primary/20 shadow-md"
+                    src="Profile .jpg" />
                 <div>
-                    <span class="block text-primary dark:text-primary-light text-xl font-bold font-headline">จาตุรงค์ ทรงภักดี</span>
-                    <span class="block text-xs uppercase tracking-widest text-on-surface/60 dark:text-on-surface-dark/60 font-bold mt-1">พชง. 7 ผรผ.กสฟ.น2 | การไฟฟ้าส่วนภูมิภาค</span>
+                    <span class="block text-primary dark:text-primary-light text-xl font-bold font-headline">จาตุรงค์
+                        ทรงภักดี</span>
+                    <span
+                        class="block text-xs uppercase tracking-widest text-on-surface/60 dark:text-on-surface-dark/60 font-bold mt-1">พชง.
+                        7 ผรผ.กสฟ.น2 | การไฟฟ้าส่วนภูมิภาค</span>
                 </div>
             </div>
-            
+
             <!-- Dynamic Vector SVG QR Code -->
             <div class="flex items-center gap-4">
                 <div class="text-right hidden md:block">
                     <span class="block text-xs font-bold text-secondary font-headline">แสกนเพื่อเยี่ยมชมหน้าเว็บ</span>
-                    <span class="block text-[10px] text-on-surface/40 dark:text-on-surface-dark/40">https://jaturongson-debug.github.io/Porfolio_Present/</span>
+                    <span
+                        class="block text-[10px] text-on-surface/40 dark:text-on-surface-dark/40">https://jaturongson-debug.github.io/Porfolio_Present/</span>
                 </div>
                 <div class="qr-container">
                     <!-- SVG QR Code pointing to https://jaturongson-debug.github.io/Porfolio_Present/ -->
-                    <svg width="84" height="84" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-primary">
+                    <svg width="84" height="84" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="text-primary">
                         <!-- Background -->
-                        <rect width="29" height="29" fill="white"/>
+                        <rect width="29" height="29" fill="white" />
                         <!-- QR code dots path representation for scannability -->
                         <!-- Position Finders -->
                         <!-- Top-Left -->
-                        <path d="M1 1h7v7H1V1zm1 1v5h5V2H2z" fill="currentColor"/>
-                        <rect x="3" y="3" width="3" height="3" fill="currentColor"/>
+                        <path d="M1 1h7v7H1V1zm1 1v5h5V2H2z" fill="currentColor" />
+                        <rect x="3" y="3" width="3" height="3" fill="currentColor" />
                         <!-- Top-Right -->
-                        <path d="M21 1h7v7h-7V1zm1 1v5h5V2h-5z" fill="currentColor"/>
-                        <rect x="23" y="3" width="3" height="3" fill="currentColor"/>
+                        <path d="M21 1h7v7h-7V1zm1 1v5h5V2h-5z" fill="currentColor" />
+                        <rect x="23" y="3" width="3" height="3" fill="currentColor" />
                         <!-- Bottom-Left -->
-                        <path d="M1 21h7v7H1v-7zm1 1v5h5v-5H2z" fill="currentColor"/>
-                        <rect x="3" y="23" width="3" height="3" fill="currentColor"/>
+                        <path d="M1 21h7v7H1v-7zm1 1v5h5v-5H2z" fill="currentColor" />
+                        <rect x="3" y="23" width="3" height="3" fill="currentColor" />
                         <!-- Timing patterns & Data blocks (Realistic QR visual) -->
-                        <path d="M10 2h1v1h-1zm2 0h1v1h-1zm2 0h1v1h-1zm2 0h1v1h-1zm1 1h1v1h-1zm2 0h1v1h-1zm-6 1h2v1h-2zm3 0h1v2h-1zm2 0h1v1h-1zm-6 2h1v1h-1zm4 0h2v1h-2zm-6 2h2v1H8zm3 0h1v1h-1zm2 0h2v1h-2zm4 0h1v1h-1zm-9 1h1v1h-1zm2 0h1v1h-1zm2 0h2v1h-2zm1 1h2v1h-2zm3 0h1v1h-1zm-7 1h1v1h-1zm3 0h2v1h-2zm4 0h1v1h-1zm1 1h1v2h-1zm-9 1h1v1h-1zm2 0h2v1h-2zm5 0h1v1h-1zm-7 2h2v1H3zm3 0h1v1h-1zm3 0h2v1H9zm4 0h1v1h-1zm1 1h1v1h-1zm-8 1h2v1H6zm4 0h1v1h-1zm2 0h2v1h-2zm4 0h1v1h-1z" fill="currentColor"/>
+                        <path
+                            d="M10 2h1v1h-1zm2 0h1v1h-1zm2 0h1v1h-1zm2 0h1v1h-1zm1 1h1v1h-1zm2 0h1v1h-1zm-6 1h2v1h-2zm3 0h1v2h-1zm2 0h1v1h-1zm-6 2h1v1h-1zm4 0h2v1h-2zm-6 2h2v1H8zm3 0h1v1h-1zm2 0h2v1h-2zm4 0h1v1h-1zm-9 1h1v1h-1zm2 0h1v1h-1zm2 0h2v1h-2zm1 1h2v1h-2zm3 0h1v1h-1zm-7 1h1v1h-1zm3 0h2v1h-2zm4 0h1v1h-1zm1 1h1v2h-1zm-9 1h1v1h-1zm2 0h2v1h-2zm5 0h1v1h-1zm-7 2h2v1H3zm3 0h1v1h-1zm3 0h2v1H9zm4 0h1v1h-1zm1 1h1v1h-1zm-8 1h2v1H6zm4 0h1v1h-1zm2 0h2v1h-2zm4 0h1v1h-1z"
+                            fill="currentColor" />
                         <!-- Timing lines -->
-                        <path d="M6 8v13M8 6h13" stroke="currentColor" stroke-dasharray="1 1"/>
+                        <path d="M6 8v13M8 6h13" stroke="currentColor" stroke-dasharray="1 1" />
                         <!-- Center and details -->
-                        <path d="M10 10h3v3h-3zm5 0h4v1h-4zm0 2h1v3h-1zm2 0h2v1h-2zm-5 4h1v1h-1zm2 0h3v2h-3zm5-2h2v2h-2zm-1 3h3v2h-3zm-9 3h2v2H10zm3 1h2v1h-2zm5 1h3v2h-3z" fill="currentColor"/>
+                        <path
+                            d="M10 10h3v3h-3zm5 0h4v1h-4zm0 2h1v3h-1zm2 0h2v1h-2zm-5 4h1v1h-1zm2 0h3v2h-3zm5-2h2v2h-2zm-1 3h3v2h-3zm-9 3h2v2H10zm3 1h2v1h-2zm5 1h3v2h-3z"
+                            fill="currentColor" />
                     </svg>
                 </div>
             </div>
@@ -536,10 +824,16 @@
     <footer class="bg-primary/5 dark:bg-dark-surface py-12 mt-12 border-t border-primary/10">
         <div class="max-w-7xl mx-auto px-8 flex flex-col items-center gap-6">
             <div class="flex flex-wrap justify-center gap-8 text-sm">
-                <a class="text-on-surface/60 dark:text-on-surface-dark/60 hover:text-primary transition-colors font-headline" href="#home">หน้าแรก</a>
-                <a class="text-on-surface/60 dark:text-on-surface-dark/60 hover:text-primary transition-colors font-headline" href="#expertise">ความเชี่ยวชาญ</a>
-                <a class="text-on-surface/60 dark:text-on-surface-dark/60 hover:text-primary transition-colors font-headline" href="#calculator">คำนวณพลังงาน</a>
-                <a class="text-on-surface/60 dark:text-on-surface-dark/60 hover:text-primary transition-colors font-headline" href="#achievements">ผลงาน</a>
+                <a class="text-on-surface/60 dark:text-on-surface-dark/60 hover:text-primary transition-colors font-headline"
+                    href="#home">หน้าแรก</a>
+                <a class="text-on-surface/60 dark:text-on-surface-dark/60 hover:text-primary transition-colors font-headline"
+                    href="#expertise">ความเชี่ยวชาญ</a>
+                <a class="text-on-surface/60 dark:text-on-surface-dark/60 hover:text-primary transition-colors font-headline"
+                    href="#portal">ระบบพอร์ทัล</a>
+                <a class="text-on-surface/60 dark:text-on-surface-dark/60 hover:text-primary transition-colors font-headline"
+                    href="#calculator">คำนวณพลังงาน</a>
+                <a class="text-on-surface/60 dark:text-on-surface-dark/60 hover:text-primary transition-colors font-headline"
+                    href="#achievements">ผลงาน</a>
             </div>
             <p class="text-xs text-on-surface/50 dark:text-on-surface-dark/50 text-center leading-relaxed">
                 © 2026 Provincial Electricity Authority (การไฟฟ้าส่วนภูมิภาค). สงวนลิขสิทธิ์ทั้งหมด.<br>
@@ -569,7 +863,7 @@
          * Dark / Light Mode Theme Toggle
          * ---------------------------------------------------- */
         const themeToggleBtn = document.getElementById('themeToggle');
-        
+
         // Load preference
         if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             document.documentElement.classList.add('dark');
@@ -577,7 +871,7 @@
             document.documentElement.classList.remove('dark');
         }
 
-        themeToggleBtn.addEventListener('click', function() {
+        themeToggleBtn.addEventListener('click', function () {
             if (document.documentElement.classList.contains('dark')) {
                 document.documentElement.classList.remove('dark');
                 localStorage.setItem('color-theme', 'light');
@@ -590,7 +884,7 @@
         /* ----------------------------------------------------
          * Copy Prompt to Clipboard
          * ---------------------------------------------------- */
-        document.getElementById('copyBtn').addEventListener('click', function() {
+        document.getElementById('copyBtn').addEventListener('click', function () {
             const text = document.getElementById('promptText').innerText;
             navigator.clipboard.writeText(text).then(() => {
                 const originalContent = this.innerHTML;
@@ -687,7 +981,7 @@
             let percentNeeded = target - current;
             let energyNeeded = (percentNeeded / 100) * cap; // kWh
             let chargingHours = energyNeeded / chargerPower; // hours
-            
+
             // Charging efficiency loss ~10%
             chargingHours = chargingHours * 1.1;
 
@@ -705,14 +999,14 @@
 
             // Update UI
             outEvEnergy.innerText = energyNeeded.toFixed(1);
-            
+
             if (chargerPower >= 50) { // DC Fast chargers
                 let totalMinutes = Math.round(chargingHours * 60);
                 outEvTime.innerText = totalMinutes + " นาที";
             } else {
                 outEvTime.innerText = `${h} ชม. ${m} นาที`;
             }
-            
+
             outEvCost.innerText = Math.round(cost);
             outEvSaving.innerText = Math.round(savings);
         }
@@ -744,7 +1038,7 @@
             // Math: Estimation
             // 1 kWp produces ~ 135 units/month in Thailand (avg 4.5 hours sun daily)
             let generation = size * 135; // kWh/month
-            
+
             // Financial savings
             // Assume 85% of solar is consumed in day (for selected system size vs bill size)
             let rate = 4.42; // PEA Residential electric rate
@@ -787,7 +1081,7 @@
             { id: 4, type: "comm", src: "รูปภาพผลงาน/comm-4.jpg", title: "การปฏิบัติงานในพื้นที่", desc: "การลงตรวจสอบหน้างานระบบสายส่งข้อมูลและจัดระเบียบชุดสื่อสัญญาณสื่อสารทางวิศวกรรม" },
             { id: 5, type: "comm", src: "รูปภาพผลงาน/comm-5.jpg", title: "ความร่วมมือกับบริษัทสายสื่อสาร", desc: "การจับมือประสานงานระบบสื่อสารโทรคมนาคมเพื่อสร้างระบบโครงข่ายไฟฟ้าอัจฉริยะ (Smart Grid)" },
             { id: 6, type: "comm", src: "รูปภาพผลงาน/comm-6.jpg", title: "การมอบรางวัลและเกียรติบัตร", desc: "ความสำเร็จในฐานะวิทยากรดีเด่นด้านระบบเทคโนโลยีสารสนเทศและโครงข่ายระบบจำหน่ายสื่อสาร" },
-            
+
             // EV Category
             { id: 7, type: "ev", src: "รูปภาพผลงาน/ev-1.jpg", title: "การชาร์จรถยนต์ไฟฟ้าที่บ้าน", desc: "ตรวจสอบความปลอดภัยในการติดตั้งเครื่องชาร์จรถยนต์ไฟฟ้า AC Wallbox ภายในบ้านพักอาศัย" },
             { id: 8, type: "ev", src: "รูปภาพผลงาน/ev-2.jpg", title: "การติดตั้งระบบ EV Station", desc: "วิศวกรรมการเชื่อมต่อและการวางระบบกำลังเครื่องชาร์จไฟขนาดใหญ่สำหรับสถานีอัดประจุไฟฟ้า กฟภ." },
@@ -807,7 +1101,10 @@
             // Presentations Category
             { id: 19, type: "present", src: "รูปภาพผลงาน/Present.jpg", title: "นำเสนอรายงานต่อผู้บริหาร", desc: "การบรรยายสรุปรายงานผลดำเนินงานระบบไฟฟ้าและสายสื่อสารและยุทธศาสตร์พลังงานแก่คณะกรรมการ กฟภ." },
             { id: 20, type: "present", src: "รูปภาพผลงาน/Present1.jpg", title: "การชี้แจงยุทธศาสตร์ดิจิทัล", desc: "รายงานผลการทดสอบการใช้งาน AI ในระบบโครงข่ายและการวางแผนประเมินพื้นที่เหมาะสมสำหรับการติดตั้งสถานีชาร์จ" },
-            { id: 21, type: "present", src: "รูปภาพผลงาน/Present2.jpg", title: "งานสัมมนาวิชาการวิศวกรรม", desc: "นำเสนองานวิชาการและการแลกเปลี่ยนความคิดเห็นด้านความมั่นคงของโครงสร้างระบบจำหน่ายภาคการสื่อสาร" }
+            { id: 21, type: "present", src: "รูปภาพผลงาน/Present2.jpg", title: "งานสัมมนาวิชาการวิศวกรรม", desc: "นำเสนองานวิชาการและการแลกเปลี่ยนความคิดเห็นด้านความมั่นคงของโครงสร้างระบบจำหน่ายภาคการสื่อสาร" },
+            { id: 22, type: "present", src: "รูปภาพผลงาน/Present3.jpg", title: "ตรวจเยี่ยมระบบรถกำเนิดไฟฟ้าเคลื่อนที่ (Mobile Generator)", desc: "ร่วมปฏิบัติงานและติดตามตรวจสอบความพร้อมระบบรถเครื่องกำเนิดไฟฟ้าเคลื่อนที่ของ กฟภ. เพื่อรองรับภารกิจจ่ายไฟฉุกเฉินและงานสำคัญระดับผู้บริหาร" },
+            { id: 23, type: "present", src: "รูปภาพผลงาน/Present4.jpg", title: "รางวัลชนะเลิศอันดับ 1 นวัตกรรม AI (PEA WSC)", desc: "คว้าชัยชนะเลิศอันดับ 1 ในการแข่งขัน PEA Work Skills Competition จากผลงานการนำ AI มาประยุกต์ใช้เพื่อพัฒนาประสิทธิภาพในการทำงาน" },
+            { id: 24, type: "present", src: "รูปภาพผลงาน/Present5.jpg", title: "บรรยาย Package การติดตั้ง EVPRO by PEA", desc: "วิทยากรนำเสนอแพ็กเกจการติดตั้งสถานีอัดประจุไฟฟ้า EVPRO และนวัตกรรม Volta Connext เชื่อมโยงระบบ Solar Rooftop สำหรับผู้ประกอบการ" }
         ];
 
         const galleryGrid = document.getElementById('galleryGrid');
@@ -818,8 +1115,8 @@
         // Render Gallery
         function renderGallery(category = "all") {
             galleryGrid.innerHTML = "";
-            currentFilteredImages = category === "all" 
-                ? portfolioData 
+            currentFilteredImages = category === "all"
+                ? portfolioData
                 : portfolioData.filter(img => img.type === category);
 
             currentFilteredImages.forEach((img, index) => {
@@ -827,7 +1124,7 @@
                 card.className = "group relative overflow-hidden rounded-2xl shadow-md border border-primary/5 cursor-pointer gallery-card";
                 card.style.animationDelay = `${index * 50}ms`;
                 card.setAttribute('data-index', index);
-                
+
                 card.innerHTML = `
                     <div class="h-44 md:h-52 w-full overflow-hidden bg-gray-100 dark:bg-dark-bg">
                         <img src="${img.src}" alt="${img.title}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
@@ -845,7 +1142,7 @@
         }
 
         function getCategoryName(type) {
-            switch(type) {
+            switch (type) {
                 case 'comm': return 'สายสื่อสาร';
                 case 'ev': return 'ยานยนต์ไฟฟ้า';
                 case 'solar': return 'โซลาร์เซลล์';
@@ -865,7 +1162,7 @@
                 });
                 btn.classList.add('active');
                 btn.classList.remove('text-on-surface/60', 'dark:text-on-surface-dark/60');
-                
+
                 const category = btn.getAttribute('data-category');
                 renderGallery(category);
             });
@@ -883,17 +1180,42 @@
         const lightboxClose = document.getElementById('lightboxClose');
         const lightboxPrev = document.getElementById('lightboxPrev');
         const lightboxNext = document.getElementById('lightboxNext');
+        let isCustomLightboxImage = false;
+
+        function openCustomImage(src, title, desc) {
+            isCustomLightboxImage = true;
+            lightboxImg.src = src;
+            lightboxCaption.innerHTML = `
+                <strong class="text-secondary block text-lg font-headline mb-1">${title}</strong>
+                <span class="text-white/80 text-sm leading-relaxed">${desc}</span>
+            `;
+            lightboxPrev.style.display = 'none';
+            lightboxNext.style.display = 'none';
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function openInstallImageModal() {
+            openCustomImage('วิธีติดตั้ง ใน ทรส.jpg', 'ขั้นตอนการติดตั้งบนโทรศัพท์มือถือ', 'คำแนะนำวิธีเพิ่มเว็บไซต์ลงบนหน้าจอโฮมสำหรับ iPhone (Safari) และ Android (Chrome)');
+        }
+
+        function openQrModal() {
+            openCustomImage('QR Code Website .png', 'QR Code - PEA Affiliated Business Portal', 'สแกนเพื่อเข้าสู่เว็บไซต์ https://jaturongson-debug.github.io/PEA-Affiliated-Business-Portal/');
+        }
 
         function openLightbox(index) {
+            isCustomLightboxImage = false;
+            lightboxPrev.style.display = '';
+            lightboxNext.style.display = '';
             currentImageIndex = index;
             const imageData = currentFilteredImages[currentImageIndex];
-            
+
             lightboxImg.src = imageData.src;
             lightboxCaption.innerHTML = `
                 <strong class="text-secondary block text-lg font-headline mb-1">${imageData.title}</strong>
                 <span class="text-white/80 text-sm leading-relaxed">${imageData.desc}</span>
             `;
-            
+
             lightbox.classList.add('active');
             document.body.style.overflow = 'hidden'; // Lock scrolling
         }
@@ -901,15 +1223,19 @@
         function closeLightbox() {
             lightbox.classList.remove('active');
             document.body.style.overflow = ''; // Unlock scrolling
+            lightboxPrev.style.display = '';
+            lightboxNext.style.display = '';
+            isCustomLightboxImage = false;
         }
 
         function navigateLightbox(dir) {
+            if (isCustomLightboxImage) return;
             currentImageIndex += dir;
             if (currentImageIndex >= currentFilteredImages.length) currentImageIndex = 0;
             if (currentImageIndex < 0) currentImageIndex = currentFilteredImages.length - 1;
-            
+
             const imageData = currentFilteredImages[currentImageIndex];
-            
+
             // Brief fade transition
             lightboxImg.style.opacity = '0';
             setTimeout(() => {
@@ -942,4 +1268,5 @@
 
     </script>
 </body>
+
 </html>
